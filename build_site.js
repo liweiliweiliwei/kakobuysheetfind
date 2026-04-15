@@ -221,7 +221,7 @@ function buildSite() {
 
     rawData.forEach((item, index) => {
         const productPageName = slugMap[index];
-        const buyUrl = `https://kakobuy.com/item/details?url=${encodeURIComponent(item['微店商品链接'])}`;
+        const buyUrl = `https://kakobuy.com/item/details?url=${encodeURIComponent(item['微店商品链接'])}&affcode=6phfk`;
         const formattedItemPrice = Number(item['美元'] || 0).toFixed(2);
         const canonicalUrl = `${SITE_DOMAIN}/${productPageName}`;
         
