@@ -50,7 +50,7 @@ function escapeAttr(text) {
 }
 
 function buildSite() {
-    console.log('开始生成静态网站（含 SEO 优化）...');
+    console.log('开始生成静态网站（含元数据增强优化）...');
 
     // 1. 读取数据
     if (!fs.existsSync(DATA_FILE)) {
@@ -77,7 +77,7 @@ function buildSite() {
     const categories = [...new Set(rawData.map(item => item['品类']))].filter(Boolean);
     const brands = [...new Set(rawData.map(item => item['品牌']))].filter(Boolean);
 
-    // 映射品类与品牌的关系：每个品牌属于哪些品类
+    // 映射品类与品牌的关系
     const brandToCategories = {};
     rawData.forEach(item => {
         const brd = item['品牌'];
@@ -92,20 +92,17 @@ function buildSite() {
     // 5. 生成首页
     // ==========================================
 
-    // a. 生成分类过滤器
     let categoryFiltersHtml = `<button class="filter-btn active" data-type="category" data-filter="all">All Categories</button>`;
     categories.forEach(cat => {
         categoryFiltersHtml += `<button class="filter-btn" data-type="category" data-filter="${escapeHtml(cat)}">${escapeHtml(cat)}</button>`;
     });
 
-    // b. 生成品牌过滤器
     let brandFiltersHtml = `<button class="filter-btn active" data-type="brand" data-filter="all">All Brands</button>`;
     brands.forEach(brd => {
         const cats = Array.from(brandToCategories[brd] || []).join(',');
         brandFiltersHtml += `<button class="filter-btn" data-type="brand" data-filter="${escapeHtml(brd)}" data-categories="${escapeHtml(cats)}">${escapeHtml(brd)}</button>`;
     });
 
-    // c. 生成商品网格（使用 SLUG 链接）
     let productCardsHtml = '';
     rawData.forEach((item, index) => {
         const productPage = slugMap[index];
@@ -126,304 +123,228 @@ function buildSite() {
         </a>`;
     });
 
-    // d. 首页 SEO meta 数据
-    const indexMetaDesc = `Shop ${rawData.length}+ premium designer items from ${brands.slice(0, 8).join(', ')} and more. Best deals on ${categories.join(', ')} at ${SITE_NAME}. Verified quality, global shipping.`;
-    const indexMetaKeywords = `${SITE_NAME}, kakobuy, kakobuy spreadsheet, kakobuysheetfind, kakobuysheetfind2026, ${categories.join(', ')}, ${brands.slice(0, 15).join(', ')}, best replica, designer fashion deals`;
+    const indexMetaDesc = `Shop ${rawData.length}+ premium designer items from ${brands.slice(0, 8).join(', ')} and more. Best deals on ${categories.slice(0, 6).join(', ')} at ${SITE_NAME}. Verified quality, global shipping.`;
+    const indexMetaKeywords = `${SITE_NAME}, kakobuy, kakobuy spreadsheet, kakobuysheetfind, ${categories.join(', ')}, brands, replica, designer fashion`;
 
-    // 替换首页模板中的内容
     let finalIndexHtml = indexTemplate;
-
-    // 替换首页 meta 标签
     finalIndexHtml = finalIndexHtml.replace('PLACEHOLDER_META_DESCRIPTION', escapeAttr(indexMetaDesc));
-    finalIndexHtml = finalIndexHtml.replace('PLACEHOLDER_META_DESCRIPTION', escapeAttr(indexMetaDesc)); // OG 也要替
+    finalIndexHtml = finalIndexHtml.replace('PLACEHOLDER_META_DESCRIPTION', escapeAttr(indexMetaDesc));
     finalIndexHtml = finalIndexHtml.replace('PLACEHOLDER_META_KEYWORDS', escapeAttr(indexMetaKeywords));
 
-    // 替换过滤器区域
     const filterSectionRegex = /<section class="filters-section">[\s\S]*?<\/section>/;
-    const newFilterSection = `
-            <section class="filters-section">
-                <div class="filter-group">
-                    ${categoryFiltersHtml}
-                </div>
-                <div class="filter-group">
-                    ${brandFiltersHtml}
-                </div>
-            </section>`;
+    const newFilterSection = `<section class="filters-section"><div class="filter-group">${categoryFiltersHtml}</div><div class="filter-group">${brandFiltersHtml}</div></section>`;
     finalIndexHtml = finalIndexHtml.replace(filterSectionRegex, newFilterSection);
 
-    // 替换商品网格
     const productGridRegex = /<section class="product-grid">[\s\S]*?<\/section>/;
     const newProductGridHtml = `<section class="product-grid">${productCardsHtml}</section>`;
     finalIndexHtml = finalIndexHtml.replace(productGridRegex, newProductGridHtml);
 
-    // 注入客户端过滤脚本
-    const filterScript = `
-    <script>
+    // 构建描述字典用于客户端注入
+    const categoryDescMap = {};
+    const brandDescMap = {};
+    rawData.forEach(item => {
+        if (item['品类'] && item['品类英文描述']) categoryDescMap[item['品类']] = item['品类英文描述'];
+        if (item['品牌'] && item['品牌英文描述']) brandDescMap[item['品牌']] = item['品牌英文描述'];
+    });
+
+    // 注入脚本
+    const filterScript = `<script>
+    const categoryDescMap = ${JSON.stringify(categoryDescMap)};
+    const brandDescMap = ${JSON.stringify(brandDescMap)};
     document.addEventListener('DOMContentLoaded', function() {
         const catBtns = document.querySelectorAll('.filter-btn[data-type="category"]');
         const brdBtns = document.querySelectorAll('.filter-btn[data-type="brand"]');
         const products = document.querySelectorAll('.product-card');
-
+        const descEl = document.querySelector('.hero-description');
         let currentCategory = 'all';
         let currentBrand = 'all';
 
         function updateDisplay() {
-            // 更新 Hero Section 文本
             const heroBg = document.querySelector('.hero-bg-text');
             const heroTitle = document.querySelector('.hero-title');
-            
-            if (currentCategory === 'all') {
-                heroBg.textContent = '${SITE_NAME}';
-            } else {
-                heroBg.textContent = currentCategory;
+            heroBg.textContent = currentCategory === 'all' ? '${SITE_NAME}' : currentCategory;
+            heroTitle.textContent = currentBrand === 'all' ? (currentCategory === 'all' ? 'Premium Drop' : currentCategory) : currentBrand;
+
+            if (descEl) {
+                let descText = "";
+                if (currentCategory === 'all' && currentBrand === 'all') {
+                    descText = "";
+                } else if (currentCategory === 'all' && currentBrand !== 'all') {
+                    descText = brandDescMap[currentBrand] || '';
+                } else if (currentCategory !== 'all' && currentBrand === 'all') {
+                    descText = categoryDescMap[currentCategory] || '';
+                } else {
+                    descText = brandDescMap[currentBrand] || '';
+                }
+                
+                if (descText) {
+                    descEl.textContent = descText;
+                    descEl.style.display = 'block';
+                } else {
+                    descEl.style.display = 'none';
+                }
             }
 
-            if (currentBrand === 'all') {
-                heroTitle.textContent = currentCategory === 'all' ? 'Premium Drop' : currentCategory;
-            } else {
-                heroTitle.textContent = currentBrand;
-            }
-
-            // 筛选品牌按钮
             brdBtns.forEach(btn => {
                 const filter = btn.getAttribute('data-filter');
-                if (filter === 'all') {
-                    btn.style.display = 'block';
-                    return;
-                }
+                if (filter === 'all') { btn.style.display = 'block'; return; }
                 const allowedCats = btn.getAttribute('data-categories').split(',');
-                if (currentCategory === 'all' || allowedCats.includes(currentCategory)) {
-                    btn.style.display = 'block';
-                } else {
-                    btn.style.display = 'none';
-                    if (currentBrand === filter) {
-                        currentBrand = 'all';
-                        brdBtns.forEach(b => b.classList.remove('active'));
-                        document.querySelector('.filter-btn[data-type="brand"][data-filter="all"]').classList.add('active');
-                    }
-                }
+                btn.style.display = (currentCategory === 'all' || allowedCats.includes(currentCategory)) ? 'block' : 'none';
             });
 
-            // 筛选商品
             products.forEach(card => {
-                const cat = card.getAttribute('data-category');
-                const brd = card.getAttribute('data-brand');
-                
-                const catMatch = (currentCategory === 'all' || cat === currentCategory);
-                const brdMatch = (currentBrand === 'all' || brd === currentBrand);
-
-                if (catMatch && brdMatch) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
+                const catMatch = (currentCategory === 'all' || card.getAttribute('data-category') === currentCategory);
+                const brdMatch = (currentBrand === 'all' || card.getAttribute('data-brand') === currentBrand);
+                card.style.display = (catMatch && brdMatch) ? 'block' : 'none';
             });
         }
 
-        catBtns.forEach(btn => {
+        [...catBtns, ...brdBtns].forEach(btn => {
             btn.addEventListener('click', () => {
-                catBtns.forEach(b => b.classList.remove('active'));
+                const type = btn.getAttribute('data-type');
+                (type === 'category' ? catBtns : brdBtns).forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                currentCategory = btn.getAttribute('data-filter');
-                updateDisplay();
-            });
-        });
-
-        brdBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                brdBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentBrand = btn.getAttribute('data-filter');
+                if (type === 'category') currentCategory = btn.getAttribute('data-filter');
+                else currentBrand = btn.getAttribute('data-filter');
                 updateDisplay();
             });
         });
     });
-    </script>
-    `;
-
+    </script>`;
     finalIndexHtml = finalIndexHtml.replace('</body>', filterScript + '</body>');
-
     fs.writeFileSync(path.join(OUTPUT_DIR, 'index.html'), finalIndexHtml);
-    console.log('✅ 首页 index.html 生成完成（含 SEO meta 标签）');
 
     // ==========================================
     // 6. 生成详情页
     // ==========================================
-    const sitemapEntries = [];
-    sitemapEntries.push({ url: `${SITE_DOMAIN}/`, priority: '1.0', changefreq: 'daily' });
+    const sitemapEntries = [{ url: `${SITE_DOMAIN}/`, priority: '1.0', changefreq: 'daily' }];
 
     rawData.forEach((item, index) => {
         const productPageName = slugMap[index];
         const buyUrl = `https://kakobuy.com/item/details?url=${encodeURIComponent(item['微店商品链接'])}`;
         const formattedItemPrice = Number(item['美元'] || 0).toFixed(2);
         const canonicalUrl = `${SITE_DOMAIN}/${productPageName}`;
-        const description = item['Description'] || '';
-        const keywords = item['Keyword'] || '';
-        const tags = item['TAG'] || '';
+        
         const brand = item['品牌'] || '';
         const category = item['品类'] || '';
         const title = item['Tittle'] || '';
         const imageUrl = item['SKU图片地址'] || '';
+        
+        // 核心元数据增强
+        const prodDesc = item['Description'] || '';
+        const brandDesc = item['品牌英文描述'] || '';
+        const categoryDesc = item['品类英文描述'] || '';
+        const keywords = item['Keyword'] || '';
+        const tags = item['TAG'] || '';
 
-        // 添加到 sitemap
         sitemapEntries.push({ url: canonicalUrl, priority: '0.8', changefreq: 'weekly' });
 
-        // 推荐商品逻辑：显示所有商品（排除当前商品）
-        const recommendations = rawData.filter((p, i) => i !== index);
+        // 构建详细内容区块
+        let detailsHtml = `
+            <div class="product-details">
+                <h4 class="detail-section-title">Product Description</h4>
+                <div class="product-description-text" style="margin-bottom: 32px; line-height: 1.6; color: var(--text-muted); font-size: 0.95rem;">${escapeHtml(prodDesc)}</div>
+                
+                ${brandDesc ? `
+                <h4 class="detail-section-title">About ${escapeHtml(brand)}</h4>
+                <div class="brand-description-text" style="margin-bottom: 32px; line-height: 1.6; color: var(--text-muted); font-size: 0.9rem; font-style: italic; border-left: 2px solid var(--border-color); padding-left: 15px;">${escapeHtml(brandDesc)}</div>
+                ` : ''}
 
-        let recHtml = '';
-        recommendations.forEach((rec) => {
-            const originalIndex = rawData.indexOf(rec);
-            const formattedRecPrice = Number(rec['美元'] || 0).toFixed(2);
-            const recPageName = slugMap[originalIndex];
-            recHtml += `
-            <a href="${recPageName}" class="rec-card">
-                <div class="rec-image-box">
-                    <img src="${escapeHtml(rec['SKU图片地址'])}" alt="${escapeHtml(rec['品牌'])} ${escapeHtml(rec['Tittle'])}" loading="lazy">
-                </div>
-                <p class="rec-brand">${escapeHtml(rec['品牌'])}</p>
-                <h3 class="rec-name">${escapeHtml(rec['Tittle'])}</h3>
-                <p class="rec-price">$${formattedRecPrice}</p>
-            </a>`;
-        });
+                ${categoryDesc ? `
+                <h4 class="detail-section-title">${escapeHtml(category)} Guide</h4>
+                <div class="category-description-text" style="margin-bottom: 32px; line-height: 1.6; color: var(--text-muted); font-size: 0.85rem; opacity: 0.8;">${escapeHtml(categoryDesc)}</div>
+                ` : ''}
+            </div>`;
 
-        // 生成 TAG 标签 HTML
-        let tagsHtml = '';
-        if (tags) {
-            const tagList = tags.split(',').map(t => t.trim()).filter(Boolean);
-            if (tagList.length > 0) {
-                tagsHtml = `<div class="product-tags" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;">`;
-                tagList.forEach(tag => {
-                    tagsHtml += `<span style="display:inline-block;padding:4px 12px;background:#f3f4f6;border-radius:9999px;font-size:12px;color:#6b7280;font-weight:500;">${escapeHtml(tag)}</span>`;
-                });
-                tagsHtml += `</div>`;
-            }
-        }
+        // SEO Meta 优化
+        const seoDesc = brandDesc ? `${escapeHtml(brand)} ${escapeHtml(title)}. ${brandDesc.substring(0, 150)}...` : escapeHtml(prodDesc);
 
-        // 生成 JSON-LD 结构化数据（Product Schema）
+        let finalProductHtml = productTemplate;
+        finalProductHtml = finalProductHtml.replace(/<title>.*?<\/title>/, `<title>${escapeHtml(title)} | ${escapeHtml(brand)} ${escapeHtml(category)} | ${SITE_NAME}</title>`);
+        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_META_DESCRIPTION', escapeAttr(seoDesc));
+        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_META_DESCRIPTION', escapeAttr(seoDesc));
+        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_META_KEYWORDS', escapeAttr(keywords));
+        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_CANONICAL_URL', canonicalUrl);
+        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_OG_TITLE', escapeAttr(`${title} - ${SITE_NAME}`));
+        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_OG_IMAGE', escapeAttr(imageUrl));
+        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_OG_URL', canonicalUrl);
+        
+        // JSON-LD
         const jsonLd = JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
             "name": title,
-            "description": description,
-            "image": imageUrl,
-            "brand": {
-                "@type": "Brand",
-                "name": brand
-            },
-            "category": category,
-            "offers": {
-                "@type": "Offer",
-                "url": canonicalUrl,
-                "priceCurrency": "USD",
-                "price": formattedItemPrice,
-                "availability": "https://schema.org/InStock",
-                "seller": {
-                    "@type": "Organization",
-                    "name": SITE_NAME
-                }
-            }
+            "description": prodDesc,
+            "brand": { "@type": "Brand", "name": brand },
+            "offers": { "@type": "Offer", "price": formattedItemPrice, "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
         });
-
-        let finalProductHtml = productTemplate;
-
-        // 替换标题
-        finalProductHtml = finalProductHtml.replace(/<title>.*?<\/title>/, `<title>${escapeHtml(title)} | ${SITE_NAME} - Buy ${escapeHtml(brand)} ${escapeHtml(category)}</title>`);
-
-        // 替换 SEO meta 占位符
-        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_META_DESCRIPTION', escapeAttr(description));
-        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_META_KEYWORDS', escapeAttr(keywords));
-        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_CANONICAL_URL', canonicalUrl);
-
-        // 替换 Open Graph 占位符
-        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_OG_TITLE', escapeAttr(`${title} | ${SITE_NAME}`));
-        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_OG_DESCRIPTION', escapeAttr(description));
-        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_OG_IMAGE', escapeAttr(imageUrl));
-        finalProductHtml = finalProductHtml.replace('PLACEHOLDER_OG_URL', canonicalUrl);
-
-        // 替换 JSON-LD 占位符
         finalProductHtml = finalProductHtml.replace('PLACEHOLDER_JSONLD', jsonLd);
 
         // 替换面包屑
         const breadcrumbHtml = `
-                <a href="index.html" class="breadcrumb-item">Home</a>
-                <span>/</span>
-                <span class="breadcrumb-item">${escapeHtml(category)}</span>
-                <span>/</span>
-                <span class="breadcrumb-current">${escapeHtml(title)}</span>`;
-        finalProductHtml = finalProductHtml.replace(/<nav class="breadcrumbs">[\s\S]*?<\/nav>/, `<nav class="breadcrumbs">${breadcrumbHtml}</nav>`);
-
-        // 替换主要内容
-        finalProductHtml = finalProductHtml.replace(/<div class="detail-image-box">[\s\S]*?<\/div>/, `
-                <div class="detail-image-box">
-                    <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(brand)} ${escapeHtml(title)} - ${escapeHtml(category)} on ${SITE_NAME}">
-                </div>`);
-        
+                <nav class="breadcrumbs">
+                    <a href="index.html" class="breadcrumb-item">Home</a>
+                    <span>/</span>
+                    <span class="breadcrumb-item">${escapeHtml(category)}</span>
+                    <span>/</span>
+                    <span class="breadcrumb-current">${escapeHtml(title)}</span>
+                </nav>`;
+        finalProductHtml = finalProductHtml.replace(/<nav class="breadcrumbs">[\s\S]*?<\/nav>/, breadcrumbHtml);
+        finalProductHtml = finalProductHtml.replace(/<div class="detail-image-box">[\s\S]*?<\/div>/, `<div class="detail-image-box"><img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}"></div>`);
         finalProductHtml = finalProductHtml.replace(/<p class="product-brand-tag">.*?<\/p>/, `<p class="product-brand-tag">${escapeHtml(brand)}</p>`);
         finalProductHtml = finalProductHtml.replace(/<h1 class="product-title">.*?<\/h1>/, `<h1 class="product-title">${escapeHtml(title)}</h1>`);
-        finalProductHtml = finalProductHtml.replace(/<p class="product-price-large">.*?<\/p>/, `<p class="product-price-large">$${formattedItemPrice}</p>${tagsHtml}`);
+        finalProductHtml = finalProductHtml.replace(/<p class="product-price-large">.*?<\/p>/, `<p class="product-price-large">$${formattedItemPrice}</p>`);
         
-        // 替换描述 (Description)
-        const descriptionHtml = `<div class="product-description-text" style="margin-top: 20px; line-height: 1.6; color: var(--text-muted); font-size: 0.95rem;">${escapeHtml(description)}</div>`;
-        const productDetailsRegex = /<div class="product-details">[\s\S]*?<\/ul>[\s\S]*?<\/div>/;
-        finalProductHtml = finalProductHtml.replace(productDetailsRegex, `
-                    <div class="product-details">
-                        <h4 class="detail-section-title">Product Details</h4>
-                        ${descriptionHtml}
-                    </div>`);
+        // 替换商品详情区域为我们构建的增强内容
+        const detailSectionHtml = `
+            <div class="product-details">
+                ${detailsHtml}
+            </div>`;
+        const productDetailsRegex = /<div class="product-details">[\s\S]*?<\/div>(\s*<\/div>)?/; 
+        finalProductHtml = finalProductHtml.replace(productDetailsRegex, detailSectionHtml);
 
-        // 替换按钮链接
-        finalProductHtml = finalProductHtml.replace(/<button class="buy-now-btn">.*?<\/button>/, `<a href="${buyUrl}" target="_blank" class="buy-now-btn" style="text-decoration: none; display: flex; align-items: center; justify-content: center;">Buy on ${SITE_NAME}</a>`);
+        finalProductHtml = finalProductHtml.replace(/<button class="buy-now-btn">.*?<\/button>/, `<a href="${buyUrl}" target="_blank" class="buy-now-btn" style="text-decoration:none;display:flex;align-items:center;justify-content:center;">Buy on ${SITE_NAME}</a>`);
 
         // 替换推荐商品
-        const recommendedSectionRegex = /<section class="recommended-section">[\s\S]*?<\/section>/;
+        // 显示同一品类下的所有商品（排除当前商品）
+        const recList = rawData.filter((p, i) => i !== index && p['品类'] === category);
+        let recCardsHtml = '';
+        recList.forEach(rec => {
+            recCardsHtml += `
+            <a href="${slugMap[rawData.indexOf(rec)]}" class="rec-card">
+                <div class="rec-image-box">
+                    <img src="${escapeHtml(rec['SKU图片地址'])}" loading="lazy" alt="${escapeHtml(rec['Tittle'])}">
+                </div>
+                <p class="rec-brand">${escapeHtml(rec['品牌'])}</p>
+                <h3 class="rec-name">${escapeHtml(rec['Tittle'])}</h3>
+                <p class="rec-price">$${Number(rec['美元']).toFixed(2)}</p>
+            </a>`;
+        });
+
         const newRecommendedSectionHtml = `
         <section class="recommended-section">
             <div class="container">
                 <h2 class="recommended-title">Recommended Products</h2>
                 <div class="rec-grid">
-                    ${recHtml}
+                    ${recCardsHtml}
                 </div>
             </div>
         </section>`;
+        
+        const recommendedSectionRegex = /<section class="recommended-section">[\s\S]*?<\/section>/;
         finalProductHtml = finalProductHtml.replace(recommendedSectionRegex, newRecommendedSectionHtml);
 
         fs.writeFileSync(path.join(OUTPUT_DIR, productPageName), finalProductHtml);
     });
 
-    console.log(`✅ 详情页生成完成，共生成 ${rawData.length} 个页面（使用 SLUG 文件名）`);
-
-    // ==========================================
-    // 7. 生成 sitemap.xml
-    // ==========================================
-    let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-`;
-    sitemapEntries.forEach(entry => {
-        sitemapXml += `  <url>
-    <loc>${entry.url}</loc>
-    <changefreq>${entry.changefreq}</changefreq>
-    <priority>${entry.priority}</priority>
-  </url>
-`;
-    });
+    // 生成 sitemap & robots
+    let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
+    sitemapEntries.forEach(e => sitemapXml += `<url><loc>${e.url}</loc><changefreq>${e.changefreq}</changefreq><priority>${e.priority}</priority></url>`);
     sitemapXml += `</urlset>`;
-
     fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap.xml'), sitemapXml);
-    console.log(`✅ sitemap.xml 生成完成，共 ${sitemapEntries.length} 个 URL`);
+    fs.writeFileSync(path.join(OUTPUT_DIR, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE_DOMAIN}/sitemap.xml`);
 
-    // ==========================================
-    // 8. 生成 robots.txt
-    // ==========================================
-    const robotsTxt = `User-agent: *
-Allow: /
-
-Sitemap: ${SITE_DOMAIN}/sitemap.xml
-`;
-    fs.writeFileSync(path.join(OUTPUT_DIR, 'robots.txt'), robotsTxt);
-    console.log('✅ robots.txt 生成完成');
-
-    console.log('🎉 所有任务已完成！页面存放在 wangzhan 文件夹中。');
+    console.log('🎉 包含元数据增强的网站构建已完成！');
 }
 
 buildSite();

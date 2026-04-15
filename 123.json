@@ -19,7 +19,11 @@
     "文本": "recvgxCPQcUU88",
     "SLUG": "ralph-lauren-navy-hooded-down-jacket-recvgxcpqc uu88",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Ralph Lauren：海军蓝羽绒夹克，优选高密防风面料与轻盈保暖填充，简约立体剪裁辅以红色经典马标刺绣，展现美式休闲运动风格，连帽设计防寒实用，男女皆宜，冬季户外通勤理想之选。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044191,\"id\":\"chatcmpl-DU0VzkmnhJnhP7z7N9q7MT267sxe9\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":80,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1314,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1394}}",
-    "中文描述.提取值1": "Ralph Lauren：海军蓝羽绒夹克，优选高密防风面料与轻盈保暖填充，简约立体剪裁辅以红色经典马标刺绣，展现美式休闲运动风格，连帽设计防寒实用，男女皆宜，冬季户外通勤理想之选。"
+    "中文描述.提取值1": "Ralph Lauren：海军蓝羽绒夹克，优选高密防风面料与轻盈保暖填充，简约立体剪裁辅以红色经典马标刺绣，展现美式休闲运动风格，连帽设计防寒实用，男女皆宜，冬季户外通勤理想之选。",
+    "品牌slug": "ralph-lauren",
+    "品牌英文描述": "RALPH LAUREN: Iconic American luxury lifestyle brand renowned for classic Polo shirts, tailored clothing, elegant accessories, and timeless style, offering premium craftsmanship and sophisticated living.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -41,7 +45,11 @@
     "文本": "recvgxCPQc5FCf",
     "SLUG": "ralph-lauren-classic-polo-off-white-zip-jacket-recvgxcpqc5fcf",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Ralph Lauren：经典POLO系列米白色拉链夹克，以柔软棉质面料打造，简约立领设计配刺绣马标，展现美式休闲优雅风格，男女皆宜，适合多季节穿搭。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044352,\"id\":\"chatcmpl-DU0YavyhMJXZUYVXsvlcMPsD7Pbpe\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":61,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1316,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1377}}",
-    "中文描述.提取值1": "Ralph Lauren：经典POLO系列米白色拉链夹克，以柔软棉质面料打造，简约立领设计配刺绣马标，展现美式休闲优雅风格，男女皆宜，适合多季节穿搭。"
+    "中文描述.提取值1": "Ralph Lauren：经典POLO系列米白色拉链夹克，以柔软棉质面料打造，简约立领设计配刺绣马标，展现美式休闲优雅风格，男女皆宜，适合多季节穿搭。",
+    "品牌slug": "ralph-lauren",
+    "品牌英文描述": "RALPH LAUREN: Iconic American luxury lifestyle brand renowned for classic Polo shirts, tailored clothing, elegant accessories, and timeless style, offering premium craftsmanship and sophisticated living.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -63,7 +71,11 @@
     "文本": "recvgxCPQcPEDf",
     "SLUG": "cortiez-black-down-jacket-winter-recvgxcpqcpedf",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Cortiez：黑色羽绒连帽外套，亮黄色内衬设计，高蓬松防寒保暖，尼龙面料防风防水，宽松剪裁兼具街头潮流与功能性，男女同款冬季必备时尚羽绒夹克。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044346,\"id\":\"chatcmpl-DU0YU0jCjYj8cdRHgHCEKp7dLtQ6R\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":69,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1316,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1385}}",
-    "中文描述.提取值1": "Cortiez：黑色羽绒连帽外套，亮黄色内衬设计，高蓬松防寒保暖，尼龙面料防风防水，宽松剪裁兼具街头潮流与功能性，男女同款冬季必备时尚羽绒夹克。"
+    "中文描述.提取值1": "Cortiez：黑色羽绒连帽外套，亮黄色内衬设计，高蓬松防寒保暖，尼龙面料防风防水，宽松剪裁兼具街头潮流与功能性，男女同款冬季必备时尚羽绒夹克。",
+    "品牌slug": "corteiz",
+    "品牌英文描述": "CORTEIZ: UK streetwear brand known for Alcatraz logo & rebellious style. Premium hoodies, tees & accessories blending urban culture & underground aesthetics. Limited drops & exclusive hype.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -85,7 +97,11 @@
     "文本": "recvgxCPQcfbEe",
     "SLUG": "beige-unisex-loose-cotton-sweatpants-recvgxcpqcfbee",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"宽松休闲版米色卫裤，采用柔软厚实棉质面料，触感顺滑亲肤，弹性腰头搭配抽绳设计，舒适贴合不紧绷。极简剪裁展现松弛廓形，街头休闲风格男女皆宜，适合日常出行与居家穿搭，轻松打造都市随性造型。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044422,\"id\":\"chatcmpl-DU0ZiX860NRb2zXDMzFUMyTugFw2H\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":93,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1308,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1401}}",
-    "中文描述.提取值1": "宽松休闲版米色卫裤，采用柔软厚实棉质面料，触感顺滑亲肤，弹性腰头搭配抽绳设计，舒适贴合不紧绷。极简剪裁展现松弛廓形，街头休闲风格男女皆宜，适合日常出行与居家穿搭，轻松打造都市随性造型。"
+    "中文描述.提取值1": "宽松休闲版米色卫裤，采用柔软厚实棉质面料，触感顺滑亲肤，弹性腰头搭配抽绳设计，舒适贴合不紧绷。极简剪裁展现松弛廓形，街头休闲风格男女皆宜，适合日常出行与居家穿搭，轻松打造都市随性造型。",
+    "品牌slug": "other",
+    "品牌英文描述": "Other: This category lists all products that cannot be classified under specific brands. It helps users quickly locate items with unknown or unbranded identities for easier searching.",
+    "品类slug": "pants",
+    "品类英文描述": "Discover versatile pants & shorts for any occasion. Breathable, stretchy fabrics. Slim, straight & wide-leg fits. Perfect for casual, work, or exercise. Elevate your style with up to 200+ characters."
   },
   {
     "微店 ID": 1701442386,
@@ -107,7 +123,11 @@
     "文本": "recvgxCPQcwmQ5",
     "SLUG": "fear-of-god-essentials-grey-heavyweight-fleece-hoodie-recvgxcpqcwmq5",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Essentials：灰色连帽卫衣，采用高克重纯棉毛圈面料，柔软厚实保暖。胸前立体“ESSENTIALS FEAR OF GOD”标识简约醒目，宽松廓形搭配落肩设计，休闲街头风格彰显潮流态度。男女同款，兼具舒适与时尚，适合秋冬日常穿搭。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044358,\"id\":\"chatcmpl-DU0YgO2svTqTB4hGtGzka7ZLFz29s\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":95,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1317,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1412}}",
-    "中文描述.提取值1": "Essentials：灰色连帽卫衣，采用高克重纯棉毛圈面料，柔软厚实保暖。胸前立体“ESSENTIALS FEAR OF GOD”标识简约醒目，宽松廓形搭配落肩设计，休闲街头风格彰显潮流态度。男女同款，兼具舒适与时尚，适合秋冬日常穿搭。"
+    "中文描述.提取值1": "Essentials：灰色连帽卫衣，采用高克重纯棉毛圈面料，柔软厚实保暖。胸前立体“ESSENTIALS FEAR OF GOD”标识简约醒目，宽松廓形搭配落肩设计，休闲街头风格彰显潮流态度。男女同款，兼具舒适与时尚，适合秋冬日常穿搭。",
+    "品牌slug": "essentials",
+    "品牌英文描述": "Essentials is the premium casual sub-line of Fear of God, founded in Los Angeles in 2018 by Jerry Lorenzo. It features minimalist American street style, with oversized silhouettes, muted tones and quality basics. Covering hoodies, T-shirts and pants, it balances comfort and luxury, and is popular in global streetwear.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -128,7 +148,11 @@
     "文本": "recvgxFjjAvJpJ",
     "SLUG": "arcteryx-black-gore-tex-waterproof-jacket-recvgxfjjavjpj",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Arc'teryx：黑色防水冲锋衣，采用GORE-TEX三层面料，轻盈透气兼防风雨。极简立体剪裁展现都市机能美学，胸前品牌标志彰显专业户外精神。配备可调节风帽与防水拉链设计，适合男女全年户外穿搭，集功能与时尚于一身。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044459,\"id\":\"chatcmpl-DU0aJO1AP9Ph1vbrmqb2nKN2RNxRI\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":91,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1308,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1399}}",
-    "中文描述.提取值1": "Arc'teryx：黑色防水冲锋衣，采用GORE-TEX三层面料，轻盈透气兼防风雨。极简立体剪裁展现都市机能美学，胸前品牌标志彰显专业户外精神。配备可调节风帽与防水拉链设计，适合男女全年户外穿搭，集功能与时尚于一身。"
+    "中文描述.提取值1": "Arc'teryx：黑色防水冲锋衣，采用GORE-TEX三层面料，轻盈透气兼防风雨。极简立体剪裁展现都市机能美学，胸前品牌标志彰显专业户外精神。配备可调节风帽与防水拉链设计，适合男女全年户外穿搭，集功能与时尚于一身。",
+    "品牌slug": "Arc teryx",
+    "品牌英文描述": "Arc'teryx: Top outdoor gear brand for high-performance GORE-TEX jackets, hardshells, and technical apparel. Built for mountaineering, skiing, and extreme expeditions with durability, functionality, and minimalist design.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -150,7 +174,11 @@
     "文本": "recvgxFjjA95Pp",
     "SLUG": "retro-purple-unisex-cotton-loose-sweatpants-recvgxfjja95pp",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"复古休闲紫色运动长裤，柔软厚实棉质面料，宽松直筒剪裁搭配抽绳设计，兼具舒适与街头潮流感，男女同款百搭单品，展现现代复古运动风。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044379,\"id\":\"chatcmpl-DU0Z1b1HiEM0EVepJLKiVf7chiL7f\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":62,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1306,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1368}}",
-    "中文描述.提取值1": "复古休闲紫色运动长裤，柔软厚实棉质面料，宽松直筒剪裁搭配抽绳设计，兼具舒适与街头潮流感，男女同款百搭单品，展现现代复古运动风。"
+    "中文描述.提取值1": "复古休闲紫色运动长裤，柔软厚实棉质面料，宽松直筒剪裁搭配抽绳设计，兼具舒适与街头潮流感，男女同款百搭单品，展现现代复古运动风。",
+    "品牌slug": "other",
+    "品牌英文描述": "Other: This category lists all products that cannot be classified under specific brands. It helps users quickly locate items with unknown or unbranded identities for easier searching.",
+    "品类slug": "pants",
+    "品类英文描述": "Discover versatile pants & shorts for any occasion. Breathable, stretchy fabrics. Slim, straight & wide-leg fits. Perfect for casual, work, or exercise. Elevate your style with up to 200+ characters."
   },
   {
     "微店 ID": 1701442386,
@@ -172,7 +200,11 @@
     "文本": "recvgxFjjA3xDS",
     "SLUG": "stone-island-grey-hooded-down-winter-jacket-recvgxFjjA3xDS",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Stone Island：灰色连帽羽绒夹克，甄选高密防风面料与优质羽绒填充，保暖轻盈。袖侧标志性罗盘徽章彰显品牌辨识度，简约挺括剪裁融合都市机能风格，男女皆宜，冬季出街或户外穿搭皆显时尚格调。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044241,\"id\":\"chatcmpl-DU0WnOy9aFMNOVkfW0FvfiZPu1rSM\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":86,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1318,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1404}}",
-    "中文描述.提取值1": "Stone Island：灰色连帽羽绒夹克，甄选高密防风面料与优质羽绒填充，保暖轻盈。袖侧标志性罗盘徽章彰显品牌辨识度，简约挺括剪裁融合都市机能风格，男女皆宜，冬季出街或户外穿搭皆显时尚格调。"
+    "中文描述.提取值1": "Stone Island：灰色连帽羽绒夹克，甄选高密防风面料与优质羽绒填充，保暖轻盈。袖侧标志性罗盘徽章彰显品牌辨识度，简约挺括剪裁融合都市机能风格，男女皆宜，冬季出街或户外穿搭皆显时尚格调。",
+    "品牌slug": "stone-island",
+    "品牌英文描述": "STONE ISLAND: Italian luxury techwear with iconic compass badge. Innovative fabric & dye tech for durable, stylish urban gear. Shop classic & new collections.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -194,7 +226,11 @@
     "文本": "recvgxFjjADr3i",
     "SLUG": "eric-emanuel-black-cotton-3d-logo-baseball-cap-recvgxfjjadr3i",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Eric Emanuel：黑色棒球帽，采用高密度纯棉面料打造，挺括有型且透气舒适。正面亮黄色立体刺绣字母标志，侧面点缀品牌标识刺绣，彰显街头潮流态度。经典六片结构搭配平檐设计，男女通用款式，融合复古与运动元素，展现都市时尚风格，适合日常休闲与个性搭配。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044209,\"id\":\"chatcmpl-DU0WHxR3VrGmSJe9quvTpVuKpGs3f\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":110,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1306,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1416}}",
-    "中文描述.提取值1": "Eric Emanuel：黑色棒球帽，采用高密度纯棉面料打造，挺括有型且透气舒适。正面亮黄色立体刺绣字母标志，侧面点缀品牌标识刺绣，彰显街头潮流态度。经典六片结构搭配平檐设计，男女通用款式，融合复古与运动元素，展现都市时尚风格，适合日常休闲与个性搭配。"
+    "中文描述.提取值1": "Eric Emanuel：黑色棒球帽，采用高密度纯棉面料打造，挺括有型且透气舒适。正面亮黄色立体刺绣字母标志，侧面点缀品牌标识刺绣，彰显街头潮流态度。经典六片结构搭配平檐设计，男女通用款式，融合复古与运动元素，展现都市时尚风格，适合日常休闲与个性搭配。",
+    "品牌slug": "",
+    "品牌英文描述": "",
+    "品类slug": "headwear",
+    "品类英文描述": "Headwear Collection: baseball caps, bucket hats, berets & wide-brim hats. Premium materials, UV protection & stylish designs. Elevate your daily look. Shop now! 👒🧢"
   },
   {
     "微店 ID": 1701442386,
@@ -216,7 +252,11 @@
     "文本": "recvgxFjjA7XUb",
     "SLUG": "cortiez-black-puffer-jacket-recvgxFjjA7XUb",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Cortiez 黑色高蓬羽绒夹克，选用轻盈防风面料，胸前刺绣品牌标识彰显街头质感，立领设计提升保暖性与层次感，宽松剪裁适合男女穿搭，融合英伦街头风与现代机能元素，展现都市冬季时尚态度。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044292,\"id\":\"chatcmpl-DU0XcnwnjTAvyvlsDC6CaaTMs71Zi\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":83,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1302,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1385}}",
-    "中文描述.提取值1": "Cortiez 黑色高蓬羽绒夹克，选用轻盈防风面料，胸前刺绣品牌标识彰显街头质感，立领设计提升保暖性与层次感，宽松剪裁适合男女穿搭，融合英伦街头风与现代机能元素，展现都市冬季时尚态度。"
+    "中文描述.提取值1": "Cortiez 黑色高蓬羽绒夹克，选用轻盈防风面料，胸前刺绣品牌标识彰显街头质感，立领设计提升保暖性与层次感，宽松剪裁适合男女穿搭，融合英伦街头风与现代机能元素，展现都市冬季时尚态度。",
+    "品牌slug": "corteiz",
+    "品牌英文描述": "CORTEIZ: UK streetwear brand known for Alcatraz logo & rebellious style. Premium hoodies, tees & accessories blending urban culture & underground aesthetics. Limited drops & exclusive hype.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -238,7 +278,11 @@
     "文本": "recvgxFjjAqIbT",
     "SLUG": "cheng-kelun-grey-cotton-stretch-boxer-briefs-recvgxFjjAqIbT",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Cheng Kelun灰色男士弹力平角内裤，甄选柔滑棉氨纶混纺面料，腰头印品牌标识，版型贴合支撑性强，简约时尚设计彰显都市轻奢格调，舒适透气适合全天穿着。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044184,\"id\":\"chatcmpl-DU0Vsn3ExqBSGo2u9PtEANfn3d1ck\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":73,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1318,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1391}}",
-    "中文描述.提取值1": "Cheng Kelun灰色男士弹力平角内裤，甄选柔滑棉氨纶混纺面料，腰头印品牌标识，版型贴合支撑性强，简约时尚设计彰显都市轻奢格调，舒适透气适合全天穿着。"
+    "中文描述.提取值1": "Cheng Kelun灰色男士弹力平角内裤，甄选柔滑棉氨纶混纺面料，腰头印品牌标识，版型贴合支撑性强，简约时尚设计彰显都市轻奢格调，舒适透气适合全天穿着。",
+    "品牌slug": "chengKeLun",
+    "品牌英文描述": "ChengKeLun: Innovative cross-border e-commerce brand offering trendy, high-quality products with global shipping and secure payment options.",
+    "品类slug": "pants",
+    "品类英文描述": "Discover versatile pants & shorts for any occasion. Breathable, stretchy fabrics. Slim, straight & wide-leg fits. Perfect for casual, work, or exercise. Elevate your style with up to 200+ characters."
   },
   {
     "微店 ID": 1701442386,
@@ -260,7 +304,11 @@
     "文本": "recvgxFjjAKl1F",
     "SLUG": "the-north-face-unisex-black-puffer-down-jacket-recvgxfjjakl1f",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"The North Face 黑色羽绒夹克，采用优质防风防水尼龙面料，立领设计保暖舒适，蓬松轻盈的羽绒填充带来卓越御寒性能，简约街头风格，男女皆宜，冬季都市休闲必备款。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044338,\"id\":\"chatcmpl-DU0YM3lLHhtcBdVdPGZyOprLKnLbD\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":71,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1318,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1389}}",
-    "中文描述.提取值1": "The North Face 黑色羽绒夹克，采用优质防风防水尼龙面料，立领设计保暖舒适，蓬松轻盈的羽绒填充带来卓越御寒性能，简约街头风格，男女皆宜，冬季都市休闲必备款。"
+    "中文描述.提取值1": "The North Face 黑色羽绒夹克，采用优质防风防水尼龙面料，立领设计保暖舒适，蓬松轻盈的羽绒填充带来卓越御寒性能，简约街头风格，男女皆宜，冬季都市休闲必备款。",
+    "品牌slug": "the-north-face",
+    "品牌英文描述": "THE NORTH FACE: Never Stop Exploring. The North Face delivers high-performance outdoor gear for global explorers. Using advanced fabric technology, our professional登山 apparel, insulated jackets, durable packs, and tents protect against extreme conditions. Empowering every journey from summits to city outskirts.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -282,7 +330,11 @@
     "文本": "recvgxFjjAhFKd",
     "SLUG": "erd-enfants-riches-deprimes-black-collage-print-hoodie-recvgxfjjahfkd",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Enfants Riches Déprimés：黑色拼贴印花连帽卫衣，采用高克重纯棉面料，廓形宽松。胸前与袖部拼贴艺术印花图腾，彰显解构主义美学。抽绳连帽与袋鼠口袋设计，兼具街头与先锋风格，男女皆宜，展现颓废艺术的独特个性。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044277,\"id\":\"chatcmpl-DU0XNnGzHa4hsMyK8s8A4p3Uchx3M\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":94,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1313,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1407}}",
-    "中文描述.提取值1": "Enfants Riches Déprimés：黑色拼贴印花连帽卫衣，采用高克重纯棉面料，廓形宽松。胸前与袖部拼贴艺术印花图腾，彰显解构主义美学。抽绳连帽与袋鼠口袋设计，兼具街头与先锋风格，男女皆宜，展现颓废艺术的独特个性。"
+    "中文描述.提取值1": "Enfants Riches Déprimés：黑色拼贴印花连帽卫衣，采用高克重纯棉面料，廓形宽松。胸前与袖部拼贴艺术印花图腾，彰显解构主义美学。抽绳连帽与袋鼠口袋设计，兼具街头与先锋风格，男女皆宜，展现颓废艺术的独特个性。",
+    "品牌slug": "",
+    "品牌英文描述": "",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -304,7 +356,11 @@
     "文本": "recvgxFjjAf36m",
     "SLUG": "gallery-dept-classic-black-hoodie-recvgxfjjaf36m",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Gallery Dept：经典系列黑色连帽卫衣，柔软纯棉材质，正面简约“DEPT.”字样，背后标志性“GALLERY DEPT. HOLLYWOOD, CA.”印花，街头复古设计，男女皆宜，舒适百搭，展现都市潮流个性。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044445,\"id\":\"chatcmpl-DU0a5JIt6JJbJ3aWhlWw6nWno4UiI\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":75,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1305,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1380}}",
-    "中文描述.提取值1": "Gallery Dept：经典系列黑色连帽卫衣，柔软纯棉材质，正面简约“DEPT.”字样，背后标志性“GALLERY DEPT. HOLLYWOOD, CA.”印花，街头复古设计，男女皆宜，舒适百搭，展现都市潮流个性。"
+    "中文描述.提取值1": "Gallery Dept：经典系列黑色连帽卫衣，柔软纯棉材质，正面简约“DEPT.”字样，背后标志性“GALLERY DEPT. HOLLYWOOD, CA.”印花，街头复古设计，男女皆宜，舒适百搭，展现都市潮流个性。",
+    "品牌slug": "gallery-dept",
+    "品牌英文描述": "GALLERY DEPT: LA streetwear brand known for handcrafted graffiti, vintage washes, premium cotton, distressed tees, hoodies, denim. Unique artistry, retro rebellious style.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -326,7 +382,11 @@
     "文本": "recvgxFjjAAfnQ",
     "SLUG": "hoodes-superme-classic-gray-3d-embroidered-cotton-hoodie-recvgxfjjnafnq",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Supreme：经典灰色连帽卫衣，优质纯棉材质柔软亲肤，胸前立体刺绣logo设计，极简街头风格，男女皆宜，适合都市休闲与潮流搭配，展现90年代复古时尚气息。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044369,\"id\":\"chatcmpl-DU0YriHlsJmJPqDSHFl3yIyOliLzG\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":67,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1301,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1368}}",
-    "中文描述.提取值1": "Supreme：经典灰色连帽卫衣，优质纯棉材质柔软亲肤，胸前立体刺绣logo设计，极简街头风格，男女皆宜，适合都市休闲与潮流搭配，展现90年代复古时尚气息。"
+    "中文描述.提取值1": "Supreme：经典灰色连帽卫衣，优质纯棉材质柔软亲肤，胸前立体刺绣logo设计，极简街头风格，男女皆宜，适合都市休闲与潮流搭配，展现90年代复古时尚气息。",
+    "品牌slug": "supreme",
+    "品牌英文描述": "SUPREMESUPREME: Explore the latest Supreme collaborations and limited-edition streetwear. Renowned for unique designs, premium materials, and iconic Box Logo. Shop now for clothing, accessories, and skate gear.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -348,7 +408,11 @@
     "文本": "recvgxFjjADmPI",
     "SLUG": "cp-company-goggle-hooded-zip-cotton-hoodie-recvgxfjjadmpi",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"CP Company：蓝色连帽卫衣，标志性护目镜设计，采用高密纯棉材质制成，触感柔软且保暖。前置拉链与袋鼠口袋兼具功能性与街头造型感，焕发90年代机能风格。男女皆宜，展现品牌都市休闲与科技感融合的独特魅力。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044302,\"id\":\"chatcmpl-DU0XmsuNHSWt1Gi75Pab21I6DplVu\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":88,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1303,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1391}}",
-    "中文描述.提取值1": "CP Company：蓝色连帽卫衣，标志性护目镜设计，采用高密纯棉材质制成，触感柔软且保暖。前置拉链与袋鼠口袋兼具功能性与街头造型感，焕发90年代机能风格。男女皆宜，展现品牌都市休闲与科技感融合的独特魅力。"
+    "中文描述.提取值1": "CP Company：蓝色连帽卫衣，标志性护目镜设计，采用高密纯棉材质制成，触感柔软且保暖。前置拉链与袋鼠口袋兼具功能性与街头造型感，焕发90年代机能风格。男女皆宜，展现品牌都市休闲与科技感融合的独特魅力。",
+    "品牌slug": "cp-company",
+    "品牌英文描述": "CP COMPANY: Italian high-end functional apparel brand, innovating fabric tech with utilitarian design. Iconic glass cotton, multi-pocket systems, and convertible details fuse industrial aesthetics with functionality.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -369,7 +433,11 @@
     "TAG": "Stussy, Black, Streetwear, Unisex, Retro",
     "文本": "recvgxFjjAdJ7H",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Stussy：经典黑色长袖T恤，采用优质纯棉材质，胸前印有标志性手写Logo，背面圆盘图腾设计融合街头艺术风格，男女皆宜款，舒适透气，展现90年代加州潮流精神。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044330,\"id\":\"chatcmpl-DU0YE3jDSXcxzGeS346AiRpDClYrw\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":67,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1308,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1375}}",
-    "中文描述.提取值1": "Stussy：经典黑色长袖T恤，采用优质纯棉材质，胸前印有标志性手写Logo，背面圆盘图腾设计融合街头艺术风格，男女皆宜款，舒适透气，展现90年代加州潮流精神。"
+    "中文描述.提取值1": "Stussy：经典黑色长袖T恤，采用优质纯棉材质，胸前印有标志性手写Logo，背面圆盘图腾设计融合街头艺术风格，男女皆宜款，舒适透气，展现90年代加州潮流精神。",
+    "品牌slug": "stussy",
+    "品牌英文描述": "STUSSY: Original California streetwear brand founded by Shawn Stussy. Known for iconic signature logo, surf, skate, hip-hop culture, and premium tees, hoodies, and accessories.",
+    "品类slug": "t-shirts",
+    "品类英文描述": "T-Shirts - 100% cotton, comfortable & breathable. Men's, women's & kids' styles. Simple designs & prints. Fast fashion, affordable. Shop now for casual outfits!"
   },
   {
     "微店 ID": 1701442386,
@@ -391,7 +459,11 @@
     "文本": "recvgxFjjAgIUn",
     "SLUG": "bape-black-shark-camo-hoodie-recvgxfjjagiun",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Bape：黑色鲨鱼迷彩印花连帽卫衣，选用柔软纯棉材质，正面标志性鲨鱼图腾设计，潮流街头风格，男女同款，宽松剪裁兼具舒适与时尚感，适合日常休闲穿搭。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044181,\"id\":\"chatcmpl-DU0Vp2hkqjwgdxvwH1ILCFRgFfhBd\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":73,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1311,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1384}}",
-    "中文描述.提取值1": "Bape：黑色鲨鱼迷彩印花连帽卫衣，选用柔软纯棉材质，正面标志性鲨鱼图腾设计，潮流街头风格，男女同款，宽松剪裁兼具舒适与时尚感，适合日常休闲穿搭。"
+    "中文描述.提取值1": "Bape：黑色鲨鱼迷彩印花连帽卫衣，选用柔软纯棉材质，正面标志性鲨鱼图腾设计，潮流街头风格，男女同款，宽松剪裁兼具舒适与时尚感，适合日常休闲穿搭。",
+    "品牌slug": "bape",
+    "品牌英文描述": "BAPE: A Bathing Ape is a Japanese streetwear brand known for its iconic camo prints, shark hoodies, and unique designs, featuring premium materials and limited-edition releases.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -413,7 +485,11 @@
     "文本": "recvgxFjjAhg2U",
     "SLUG": "cortiez-grey-hoodie-recvgxfjjahg2u",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Cortiez 灰色连帽卫衣，精选纯棉材质柔软舒适，胸前标志性橄榄形Logo印花彰显街头潮流气质，宽松剪裁搭配可调节抽绳帽设计，前置袋鼠兜实用便捷，男女皆宜，复古运动风与都市街头感融合，适合日常休闲与时尚穿搭。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044430,\"id\":\"chatcmpl-DU0ZqkhRoaUKdSgkQXbJZVu0c6y8x\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":98,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1315,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1413}}",
-    "中文描述.提取值1": "Cortiez 灰色连帽卫衣，精选纯棉材质柔软舒适，胸前标志性橄榄形Logo印花彰显街头潮流气质，宽松剪裁搭配可调节抽绳帽设计，前置袋鼠兜实用便捷，男女皆宜，复古运动风与都市街头感融合，适合日常休闲与时尚穿搭。"
+    "中文描述.提取值1": "Cortiez 灰色连帽卫衣，精选纯棉材质柔软舒适，胸前标志性橄榄形Logo印花彰显街头潮流气质，宽松剪裁搭配可调节抽绳帽设计，前置袋鼠兜实用便捷，男女皆宜，复古运动风与都市街头感融合，适合日常休闲与时尚穿搭。",
+    "品牌slug": "corteiz",
+    "品牌英文描述": "CORTEIZ: UK streetwear brand known for Alcatraz logo & rebellious style. Premium hoodies, tees & accessories blending urban culture & underground aesthetics. Limited drops & exclusive hype.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -435,7 +511,11 @@
     "文本": "recvgxFjjAiLkb",
     "SLUG": "minimalist-dark-gray-cotton-knit-sweater-recvgxfjjailkb",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"简约系列深灰色针织毛衣，甄选高密度纯棉面料，柔软保暖不易变形。圆领经典版型结合细密罗纹设计，展现低调质感美学。适合男女通勤或休闲穿搭，复古简约风格彰显精致品味。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044255,\"id\":\"chatcmpl-DU0X1JrDR6bwOVODFas3NdD0DaS5Y\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":78,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1310,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1388}}",
-    "中文描述.提取值1": "简约系列深灰色针织毛衣，甄选高密度纯棉面料，柔软保暖不易变形。圆领经典版型结合细密罗纹设计，展现低调质感美学。适合男女通勤或休闲穿搭，复古简约风格彰显精致品味。"
+    "中文描述.提取值1": "简约系列深灰色针织毛衣，甄选高密度纯棉面料，柔软保暖不易变形。圆领经典版型结合细密罗纹设计，展现低调质感美学。适合男女通勤或休闲穿搭，复古简约风格彰显精致品味。",
+    "品牌slug": "other",
+    "品牌英文描述": "Other: This category lists all products that cannot be classified under specific brands. It helps users quickly locate items with unknown or unbranded identities for easier searching.",
+    "品类slug": "sweaters",
+    "品类英文描述": "Sweaters: premium wool, cashmere & cotton styles for men, women & kids. Perfect for casual, office & outdoor wear. Shop quality knitwear now!"
   },
   {
     "微店 ID": 1701442386,
@@ -457,7 +537,11 @@
     "文本": "recvgxFjjAnGl5",
     "SLUG": "hoodes-supreme-grey-cotton-crewneck-sweatshirt-recvgxfjjan-gl5",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Supreme灰色基础款卫衣，选用柔软棉质面料打造，触感舒适亲肤。极简无印设计，展现品牌低调街头美学。经典圆领与弹力罗纹袖口拼接，休闲百搭男女皆宜。适合日常穿搭与潮流混搭，凸显都市随性风格。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044188,\"id\":\"chatcmpl-DU0VwaE4MAPrnHufQyErCOuK1R1ko\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":85,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1311,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1396}}",
-    "中文描述.提取值1": "Supreme灰色基础款卫衣，选用柔软棉质面料打造，触感舒适亲肤。极简无印设计，展现品牌低调街头美学。经典圆领与弹力罗纹袖口拼接，休闲百搭男女皆宜。适合日常穿搭与潮流混搭，凸显都市随性风格。"
+    "中文描述.提取值1": "Supreme灰色基础款卫衣，选用柔软棉质面料打造，触感舒适亲肤。极简无印设计，展现品牌低调街头美学。经典圆领与弹力罗纹袖口拼接，休闲百搭男女皆宜。适合日常穿搭与潮流混搭，凸显都市随性风格。",
+    "品牌slug": "supreme",
+    "品牌英文描述": "SUPREMESUPREME: Explore the latest Supreme collaborations and limited-edition streetwear. Renowned for unique designs, premium materials, and iconic Box Logo. Shop now for clothing, accessories, and skate gear.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -479,7 +563,11 @@
     "文本": "recvgxFjjA8cTk",
     "SLUG": "stussy-3d-eyeball-print-gray-hooded-sweatshirt-unisex-recvgxFjjA8cTk",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Stussy：灰色3D眼球印花连帽卫衣，柔软纯棉面料，经典袋鼠兜设计，宽松街头风格，男女同款，融合潮流图腾与休闲元素，彰显90年代滑板文化个性。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044343,\"id\":\"chatcmpl-DU0YREymXwCOG6k0Y9Xl19tx9n7Eu\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":63,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1301,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1364}}",
-    "中文描述.提取值1": "Stussy：灰色3D眼球印花连帽卫衣，柔软纯棉面料，经典袋鼠兜设计，宽松街头风格，男女同款，融合潮流图腾与休闲元素，彰显90年代滑板文化个性。"
+    "中文描述.提取值1": "Stussy：灰色3D眼球印花连帽卫衣，柔软纯棉面料，经典袋鼠兜设计，宽松街头风格，男女同款，融合潮流图腾与休闲元素，彰显90年代滑板文化个性。",
+    "品牌slug": "stussy",
+    "品牌英文描述": "STUSSY: Original California streetwear brand founded by Shawn Stussy. Known for iconic signature logo, surf, skate, hip-hop culture, and premium tees, hoodies, and accessories.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -501,7 +589,11 @@
     "文本": "recvgxFjjAw6af",
     "SLUG": "hoodesvicinity-green-pixel-art-hoodie-recvgxfjjaw6af",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Vicinity绿色拉链连帽卫衣，采用柔软厚质棉料，胸前复古像素人物印花彰显艺术街头气息。宽松版型搭配可调节抽绳设计，适合男女日常休闲穿搭，舒适保暖又极具潮流质感。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044296,\"id\":\"chatcmpl-DU0XgMlahuAhVIPVoswJVs3ymNIZ0\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":73,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1307,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1380}}",
-    "中文描述.提取值1": "Vicinity绿色拉链连帽卫衣，采用柔软厚质棉料，胸前复古像素人物印花彰显艺术街头气息。宽松版型搭配可调节抽绳设计，适合男女日常休闲穿搭，舒适保暖又极具潮流质感。"
+    "中文描述.提取值1": "Vicinity绿色拉链连帽卫衣，采用柔软厚质棉料，胸前复古像素人物印花彰显艺术街头气息。宽松版型搭配可调节抽绳设计，适合男女日常休闲穿搭，舒适保暖又极具潮流质感。",
+    "品牌slug": "vicinity",
+    "品牌英文描述": "",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -523,7 +615,11 @@
     "文本": "recvgxFjjABp3t",
     "SLUG": "bape-green-graffiti-logo-hoodie-recvgxfjjabp3t",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Other系列绿色连帽卫衣，选用柔软厚实棉质面料，胸前醒目涂鸦标识彰显街头潮流，宽松剪裁兼具舒适与时尚，适合男女休闲穿搭。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044397,\"id\":\"chatcmpl-DU0ZJn40BpAeBo0aw0EjWPFPn3Jei\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":58,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1311,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1369}}",
-    "中文描述.提取值1": "Other系列绿色连帽卫衣，选用柔软厚实棉质面料，胸前醒目涂鸦标识彰显街头潮流，宽松剪裁兼具舒适与时尚，适合男女休闲穿搭。"
+    "中文描述.提取值1": "Other系列绿色连帽卫衣，选用柔软厚实棉质面料，胸前醒目涂鸦标识彰显街头潮流，宽松剪裁兼具舒适与时尚，适合男女休闲穿搭。",
+    "品牌slug": "bape",
+    "品牌英文描述": "BAPE: A Bathing Ape is a Japanese streetwear brand known for its iconic camo prints, shark hoodies, and unique designs, featuring premium materials and limited-edition releases.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -545,7 +641,11 @@
     "文本": "recvgxFjjALP5x",
     "SLUG": "canada-goose-deep-navy-hooded-down-jacket-recvgxfjjalp5x",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Canada Goose：高级深蓝色连帽羽绒夹克，甄选防风防水尼龙材质，轻盈保暖。立体剪裁搭配简约拉链设计，彰显都市户外风格。男女通用款，适合秋冬季穿着，尽显经典与实用兼备的高端质感。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044198,\"id\":\"chatcmpl-DU0W6CdUU0DMo8Rmzck6r0X5J99PN\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":80,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1318,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1398}}",
-    "中文描述.提取值1": "Canada Goose：高级深蓝色连帽羽绒夹克，甄选防风防水尼龙材质，轻盈保暖。立体剪裁搭配简约拉链设计，彰显都市户外风格。男女通用款，适合秋冬季穿着，尽显经典与实用兼备的高端质感。"
+    "中文描述.提取值1": "Canada Goose：高级深蓝色连帽羽绒夹克，甄选防风防水尼龙材质，轻盈保暖。立体剪裁搭配简约拉链设计，彰显都市户外风格。男女通用款，适合秋冬季穿着，尽显经典与实用兼备的高端质感。",
+    "品牌slug": "canada-goose",
+    "品牌英文描述": "CANADA GOOSE: Luxury outerwear since 1957, designed for extreme cold. Expertly crafted parkas, jackets & accessories fusing Arctic exploration technology with metropolitan style.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -567,7 +667,11 @@
     "文本": "recvgxFjjABwCa",
     "SLUG": "stone-island-black-cotton-zip-hoodie-recvgxfjjabwca",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Stone Island：黑色连帽拉链卫衣，采用高密度纯棉材质，质感柔软舒适，袖口缀以标志性罗盘徽章，彰显品牌街头机能美学。简约剪裁搭配可调节抽绳设计，兼具保暖与透气性，男女皆宜，适合日常休闲或潮流穿搭，展现意式都市风格。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044396,\"id\":\"chatcmpl-DU0ZIGBitqhd1SxZ2xD8ehcyFbzn8\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":100,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1315,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1415}}",
-    "中文描述.提取值1": "Stone Island：黑色连帽拉链卫衣，采用高密度纯棉材质，质感柔软舒适，袖口缀以标志性罗盘徽章，彰显品牌街头机能美学。简约剪裁搭配可调节抽绳设计，兼具保暖与透气性，男女皆宜，适合日常休闲或潮流穿搭，展现意式都市风格。"
+    "中文描述.提取值1": "Stone Island：黑色连帽拉链卫衣，采用高密度纯棉材质，质感柔软舒适，袖口缀以标志性罗盘徽章，彰显品牌街头机能美学。简约剪裁搭配可调节抽绳设计，兼具保暖与透气性，男女皆宜，适合日常休闲或潮流穿搭，展现意式都市风格。",
+    "品牌slug": "stone-island",
+    "品牌英文描述": "STONE ISLAND: Italian luxury techwear with iconic compass badge. Innovative fabric & dye tech for durable, stylish urban gear. Shop classic & new collections.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -589,7 +693,11 @@
     "文本": "recvgxFjjAeGCY",
     "SLUG": "hoodesuperme-gray-box-logo-hoodie-recvgxfjjaegecy",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Supreme：经典系列灰色连帽卫衣，采用高克重纯棉面料，胸前标志性红色Box Logo刺绣设计，简约街头风格，男女同款，秋冬季休闲保暖必备，展现年轻潮流态度。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044309,\"id\":\"chatcmpl-DU0XtCTiBdDAR7XMOa6bZf6iIyLLD\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":66,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1309,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1375}}",
-    "中文描述.提取值1": "Supreme：经典系列灰色连帽卫衣，采用高克重纯棉面料，胸前标志性红色Box Logo刺绣设计，简约街头风格，男女同款，秋冬季休闲保暖必备，展现年轻潮流态度。"
+    "中文描述.提取值1": "Supreme：经典系列灰色连帽卫衣，采用高克重纯棉面料，胸前标志性红色Box Logo刺绣设计，简约街头风格，男女同款，秋冬季休闲保暖必备，展现年轻潮流态度。",
+    "品牌slug": "supreme",
+    "品牌英文描述": "SUPREMESUPREME: Explore the latest Supreme collaborations and limited-edition streetwear. Renowned for unique designs, premium materials, and iconic Box Logo. Shop now for clothing, accessories, and skate gear.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -611,7 +719,11 @@
     "文本": "recvgxFjjACG6g",
     "SLUG": "tommy-hilfiger-classic-green-hoodie-recvgxfjjacg6g",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Tommy Hilfiger：经典系列深绿色连帽卫衣，柔软棉质面料，胸前标志性LOGO印花，简约美式街头风，男女通用休闲款，适合日常穿搭。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044232,\"id\":\"chatcmpl-DU0WelY5nkX8zhyRwa9i4LGvArmWP\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":56,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1321,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1377}}",
-    "中文描述.提取值1": "Tommy Hilfiger：经典系列深绿色连帽卫衣，柔软棉质面料，胸前标志性LOGO印花，简约美式街头风，男女通用休闲款，适合日常穿搭。"
+    "中文描述.提取值1": "Tommy Hilfiger：经典系列深绿色连帽卫衣，柔软棉质面料，胸前标志性LOGO印花，简约美式街头风，男女通用休闲款，适合日常穿搭。",
+    "品牌slug": "tommy-hilfiger",
+    "品牌英文描述": "TOMMY HILFIGER: American classic leisurewear since 1985, iconic red-white-blue logo shirts, collegiate jackets, premium cotton denim comfort.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -633,7 +745,11 @@
     "文本": "recvgxFjjA1WDr",
     "SLUG": "stussy-classic-white-cotton-logo-tshirt-recvgxfjja1wdr",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Stussy：经典系列白色短袖T恤，优质纯棉材质柔软透气，胸前黑色涂鸦Logo印花设计，街头潮流风格，男女通用款，展现加州滑板文化的自由与个性。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044409,\"id\":\"chatcmpl-DU0ZVAkvFxjzRRBeKjlw1BotaFyUX\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":64,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1310,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1374}}",
-    "中文描述.提取值1": "Stussy：经典系列白色短袖T恤，优质纯棉材质柔软透气，胸前黑色涂鸦Logo印花设计，街头潮流风格，男女通用款，展现加州滑板文化的自由与个性。"
+    "中文描述.提取值1": "Stussy：经典系列白色短袖T恤，优质纯棉材质柔软透气，胸前黑色涂鸦Logo印花设计，街头潮流风格，男女通用款，展现加州滑板文化的自由与个性。",
+    "品牌slug": "stussy",
+    "品牌英文描述": "STUSSY: Original California streetwear brand founded by Shawn Stussy. Known for iconic signature logo, surf, skate, hip-hop culture, and premium tees, hoodies, and accessories.",
+    "品类slug": "t-shirts",
+    "品类英文描述": "T-Shirts - 100% cotton, comfortable & breathable. Men's, women's & kids' styles. Simple designs & prints. Fast fashion, affordable. Shop now for casual outfits!"
   },
   {
     "微店 ID": 1701442386,
@@ -655,7 +771,11 @@
     "文本": "recvgxFjjAl0uc",
     "SLUG": "hoodescel-black-zip-hoodie-recvgxfjjal0uc",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"CEL：黑色连帽拉链卫衣，采用高密度棉质混纺面料，柔软舒适不易变形。帽檐印有简约白色“CEL”字母标识，极具品牌辨识度。宽松廓形设计搭配双向拉链与抽绳细节，男女皆宜，演绎法式极简街头风格。适合秋冬日常穿搭，兼具保暖与时尚感。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044298,\"id\":\"chatcmpl-DU0Xi1U7QSq62Hr0Rq9GfpfaNdgYb\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":111,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1311,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1422}}",
-    "中文描述.提取值1": "CEL：黑色连帽拉链卫衣，采用高密度棉质混纺面料，柔软舒适不易变形。帽檐印有简约白色“CEL”字母标识，极具品牌辨识度。宽松廓形设计搭配双向拉链与抽绳细节，男女皆宜，演绎法式极简街头风格。适合秋冬日常穿搭，兼具保暖与时尚感。"
+    "中文描述.提取值1": "CEL：黑色连帽拉链卫衣，采用高密度棉质混纺面料，柔软舒适不易变形。帽檐印有简约白色“CEL”字母标识，极具品牌辨识度。宽松廓形设计搭配双向拉链与抽绳细节，男女皆宜，演绎法式极简街头风格。适合秋冬日常穿搭，兼具保暖与时尚感。",
+    "品牌slug": "celine",
+    "品牌英文描述": "CELINE: French luxury brand offering minimalist handbags, leather goods, ready-to-wear & accessories. Timeless elegance, Parisian aesthetic & craftsmanship. Official global shipping.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -677,7 +797,11 @@
     "文本": "recvgxFjjAA9yQ",
     "SLUG": "gallery-dept-black-pullover-hoodie-recvgxfjjaa9yq",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Gallery Dept：黑色套头连帽卫衣，精选纯棉材质，柔软亲肤透气。正面印有品牌经典白色“DEPT. de la GALERIE”字样，极具街头艺术感。宽松廓形设计搭配抽绳帽兜与实用袋鼠口袋，男女皆宜。复古美式街头风格，彰显独立个性与随性态度，适合日常休闲与潮流穿搭。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044245,\"id\":\"chatcmpl-DU0WrzBdQVQAQTgC0s8mojnC2meba\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":114,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1311,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1425}}",
-    "中文描述.提取值1": "Gallery Dept：黑色套头连帽卫衣，精选纯棉材质，柔软亲肤透气。正面印有品牌经典白色“DEPT. de la GALERIE”字样，极具街头艺术感。宽松廓形设计搭配抽绳帽兜与实用袋鼠口袋，男女皆宜。复古美式街头风格，彰显独立个性与随性态度，适合日常休闲与潮流穿搭。"
+    "中文描述.提取值1": "Gallery Dept：黑色套头连帽卫衣，精选纯棉材质，柔软亲肤透气。正面印有品牌经典白色“DEPT. de la GALERIE”字样，极具街头艺术感。宽松廓形设计搭配抽绳帽兜与实用袋鼠口袋，男女皆宜。复古美式街头风格，彰显独立个性与随性态度，适合日常休闲与潮流穿搭。",
+    "品牌slug": "gallery-dept",
+    "品牌英文描述": "GALLERY DEPT: LA streetwear brand known for handcrafted graffiti, vintage washes, premium cotton, distressed tees, hoodies, denim. Unique artistry, retro rebellious style.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -699,7 +823,11 @@
     "文本": "recvgxFjjAwtSp",
     "SLUG": "ralph-lauren-navy-hooded-down-jacket-recvgxfjjawtsp",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Ralph Lauren 海军蓝羽绒外套，精选优质防风尼龙面料，轻盈保暖。胸前标志性红色骑士徽标彰显品牌格调，立领连帽设计兼具时尚与实用，适合男女冬季休闲穿搭，展现经典美式简约风格。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044354,\"id\":\"chatcmpl-DU0YcG5okAffLLnVM4cyzZa72ClKR\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":78,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1308,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1386}}",
-    "中文描述.提取值1": "Ralph Lauren 海军蓝羽绒外套，精选优质防风尼龙面料，轻盈保暖。胸前标志性红色骑士徽标彰显品牌格调，立领连帽设计兼具时尚与实用，适合男女冬季休闲穿搭，展现经典美式简约风格。"
+    "中文描述.提取值1": "Ralph Lauren 海军蓝羽绒外套，精选优质防风尼龙面料，轻盈保暖。胸前标志性红色骑士徽标彰显品牌格调，立领连帽设计兼具时尚与实用，适合男女冬季休闲穿搭，展现经典美式简约风格。",
+    "品牌slug": "ralph-lauren",
+    "品牌英文描述": "RALPH LAUREN: Iconic American luxury lifestyle brand renowned for classic Polo shirts, tailored clothing, elegant accessories, and timeless style, offering premium craftsmanship and sophisticated living.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -721,7 +849,11 @@
     "文本": "recvgxFjjAVSDu",
     "SLUG": "chrome-hearts-red-long-sleeve-gothic-streetwear-t-shirt-recvgxFjjAVSDu",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Chrome Hearts：红色长袖T恤，甄选纯棉材质，柔软舒适。胸前点缀品牌经典银色Logo字样与心形十字图腾，袖子饰以白色哥特字体印花，展现街头摇滚风格。宽松中性版型设计，适合男女穿搭，凸显个性与潮流态度，打造2020年代标志性街头造型。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044471,\"id\":\"chatcmpl-DU0aVHHw2tLkJ5KgkXUg5fXmX0OFj\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":103,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1314,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1417}}",
-    "中文描述.提取值1": "Chrome Hearts：红色长袖T恤，甄选纯棉材质，柔软舒适。胸前点缀品牌经典银色Logo字样与心形十字图腾，袖子饰以白色哥特字体印花，展现街头摇滚风格。宽松中性版型设计，适合男女穿搭，凸显个性与潮流态度，打造2020年代标志性街头造型。"
+    "中文描述.提取值1": "Chrome Hearts：红色长袖T恤，甄选纯棉材质，柔软舒适。胸前点缀品牌经典银色Logo字样与心形十字图腾，袖子饰以白色哥特字体印花，展现街头摇滚风格。宽松中性版型设计，适合男女穿搭，凸显个性与潮流态度，打造2020年代标志性街头造型。",
+    "品牌slug": "chrome-hearts",
+    "品牌英文描述": "CHROME HEARTS: Luxury silver jewelry & handcrafted leather goods. Gothic rock style with rebellious elegance. Rings, necklaces, bracelets & limited editions.",
+    "品类slug": "t-shirts",
+    "品类英文描述": "T-Shirts - 100% cotton, comfortable & breathable. Men's, women's & kids' styles. Simple designs & prints. Fast fashion, affordable. Shop now for casual outfits!"
   },
   {
     "微店 ID": 1701442386,
@@ -743,7 +875,11 @@
     "文本": "recvgxFjjA13I4",
     "SLUG": "canada-goose-white-down-vest-lightweight-jacket-recvgxfjja13i4",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Canada Goose：白色轻盈羽绒马甲，选用高蓬松度鹅绒填充，保暖又不显臃肿。简约无袖立领设计，搭配拉链前襟，层次分明。中性剪裁适合男女穿搭，现代极简风格彰显都市冬日高级质感。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044271,\"id\":\"chatcmpl-DU0XH1zhK7pHpc0FxBUUi7pshdsIy\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":82,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1300,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1382}}",
-    "中文描述.提取值1": "Canada Goose：白色轻盈羽绒马甲，选用高蓬松度鹅绒填充，保暖又不显臃肿。简约无袖立领设计，搭配拉链前襟，层次分明。中性剪裁适合男女穿搭，现代极简风格彰显都市冬日高级质感。"
+    "中文描述.提取值1": "Canada Goose：白色轻盈羽绒马甲，选用高蓬松度鹅绒填充，保暖又不显臃肿。简约无袖立领设计，搭配拉链前襟，层次分明。中性剪裁适合男女穿搭，现代极简风格彰显都市冬日高级质感。",
+    "品牌slug": "canada-goose",
+    "品牌英文描述": "CANADA GOOSE: Luxury outerwear since 1957, designed for extreme cold. Expertly crafted parkas, jackets & accessories fusing Arctic exploration technology with metropolitan style.",
+    "品类slug": "t-shirts",
+    "品类英文描述": "T-Shirts - 100% cotton, comfortable & breathable. Men's, women's & kids' styles. Simple designs & prints. Fast fashion, affordable. Shop now for casual outfits!"
   },
   {
     "微店 ID": 1701442386,
@@ -765,7 +901,11 @@
     "文本": "recvgxFjjAQktJ",
     "SLUG": "balenciaga-black-logo-oversized-hoodie-recvgxfjjaqktj",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Balenciaga：黑色Logo刺绣连帽卫衣，采用柔软棉质面料，宽松廓形设计，男女通用，展现极简街头风格与潮流质感。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044471,\"id\":\"chatcmpl-DU0aVhKribRtQwctsakqBmpumUFs6\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":50,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1311,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1361}}",
-    "中文描述.提取值1": "Balenciaga：黑色Logo刺绣连帽卫衣，采用柔软棉质面料，宽松廓形设计，男女通用，展现极简街头风格与潮流质感。"
+    "中文描述.提取值1": "Balenciaga：黑色Logo刺绣连帽卫衣，采用柔软棉质面料，宽松廓形设计，男女通用，展现极简街头风格与潮流质感。",
+    "品牌slug": "balenciaga",
+    "品牌英文描述": "BALENCIAGA: Discover avant-garde luxury fashion. Shop iconic bags, sneakers, ready-to-wear & accessories. Enjoy cutting-edge design & craftsmanship. Global shipping.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -787,7 +927,11 @@
     "文本": "recvgxFjjASdUk",
     "SLUG": "essentials-white-logo-hoodie-recvgxfjjasduk",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Essentials：白色连帽卫衣，精选柔软厚实棉质面料，正面黑色品牌标识印花设计，简约街头风格，宽松剪裁舒适百搭，男女皆宜，展现现代休闲潮流态度。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044273,\"id\":\"chatcmpl-DU0XJXSJEPaY93cZzcJbiQNlYmkg1\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":63,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1309,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1372}}",
-    "中文描述.提取值1": "Essentials：白色连帽卫衣，精选柔软厚实棉质面料，正面黑色品牌标识印花设计，简约街头风格，宽松剪裁舒适百搭，男女皆宜，展现现代休闲潮流态度。"
+    "中文描述.提取值1": "Essentials：白色连帽卫衣，精选柔软厚实棉质面料，正面黑色品牌标识印花设计，简约街头风格，宽松剪裁舒适百搭，男女皆宜，展现现代休闲潮流态度。",
+    "品牌slug": "essentials",
+    "品牌英文描述": "Essentials is the premium casual sub-line of Fear of God, founded in Los Angeles in 2018 by Jerry Lorenzo. It features minimalist American street style, with oversized silhouettes, muted tones and quality basics. Covering hoodies, T-shirts and pants, it balances comfort and luxury, and is popular in global streetwear.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -809,7 +953,11 @@
     "文本": "recvgxFjjASccB",
     "SLUG": "ralph-lauren-navy-half-zip-cotton-long-sleeve-shirt-recvgxfjjasc",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Ralph Lauren 海军蓝半拉链长袖上衣，甄选优质棉质面料，触感柔软透气，胸前红色刺绣马标彰显品牌经典，简约运动休闲风格，男女皆宜，现代都市轻奢系列，展现优雅品味与舒适穿感。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044236,\"id\":\"chatcmpl-DU0WiQMfBU7DqesdbhCQRM0RWTJRQ\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":78,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1296,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1374}}",
-    "中文描述.提取值1": "Ralph Lauren 海军蓝半拉链长袖上衣，甄选优质棉质面料，触感柔软透气，胸前红色刺绣马标彰显品牌经典，简约运动休闲风格，男女皆宜，现代都市轻奢系列，展现优雅品味与舒适穿感。"
+    "中文描述.提取值1": "Ralph Lauren 海军蓝半拉链长袖上衣，甄选优质棉质面料，触感柔软透气，胸前红色刺绣马标彰显品牌经典，简约运动休闲风格，男女皆宜，现代都市轻奢系列，展现优雅品味与舒适穿感。",
+    "品牌slug": "ralph-lauren",
+    "品牌英文描述": "RALPH LAUREN: Iconic American luxury lifestyle brand renowned for classic Polo shirts, tailored clothing, elegant accessories, and timeless style, offering premium craftsmanship and sophisticated living.",
+    "品类slug": "t-shirts",
+    "品类英文描述": "T-Shirts - 100% cotton, comfortable & breathable. Men's, women's & kids' styles. Simple designs & prints. Fast fashion, affordable. Shop now for casual outfits!"
   },
   {
     "微店 ID": 1701442386,
@@ -831,7 +979,11 @@
     "文本": "recvgxFjjA70J2",
     "SLUG": "hoodes-broken-hearts-brown-cotton-hoodie-recvgxFjjA70J2",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Broken Hearts 系列棕色连帽卫衣套装，采用优质纯棉材质，印有可爱双心碎图腾与品牌标识，柔软透气，彰显复古街头风格，男女皆宜，休闲穿搭首选。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044486,\"id\":\"chatcmpl-DU0akZWU7thwweRX0y3sv4czwm43w\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":63,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1307,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1370}}",
-    "中文描述.提取值1": "Broken Hearts 系列棕色连帽卫衣套装，采用优质纯棉材质，印有可爱双心碎图腾与品牌标识，柔软透气，彰显复古街头风格，男女皆宜，休闲穿搭首选。"
+    "中文描述.提取值1": "Broken Hearts 系列棕色连帽卫衣套装，采用优质纯棉材质，印有可爱双心碎图腾与品牌标识，柔软透气，彰显复古街头风格，男女皆宜，休闲穿搭首选。",
+    "品牌slug": "broken-hearts",
+    "品牌英文描述": "Broken Hearts: London sustainable streetwear. Iconic capsule series Vol.1-3 with heart designs, 'Hearts Are Made To Be Broken' slogan, 3D puff print. Hoodies, T-shirts, tracksuits, knitwear.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -853,7 +1005,11 @@
     "文本": "recvgxFjjAqv9O",
     "SLUG": "moncler-off-white-hooded-down-jacket-recvgxfjjAqv9O",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Other：米白色高蓬松连帽羽绒服，采用轻盈防风尼龙面料与优质鹅绒填充，保暖透气。简约立体剪裁搭配黑色刺绣标识与撞色内衬，彰显街头潮流美学。男女皆宜，休闲宽松版型适合冬季都市出行，兼顾功能性与时尚感。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044264,\"id\":\"chatcmpl-DU0XAHvkPlzw0mCL9vCQNnevhid8m\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":98,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1308,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1406}}",
-    "中文描述.提取值1": "Other：米白色高蓬松连帽羽绒服，采用轻盈防风尼龙面料与优质鹅绒填充，保暖透气。简约立体剪裁搭配黑色刺绣标识与撞色内衬，彰显街头潮流美学。男女皆宜，休闲宽松版型适合冬季都市出行，兼顾功能性与时尚感。"
+    "中文描述.提取值1": "Other：米白色高蓬松连帽羽绒服，采用轻盈防风尼龙面料与优质鹅绒填充，保暖透气。简约立体剪裁搭配黑色刺绣标识与撞色内衬，彰显街头潮流美学。男女皆宜，休闲宽松版型适合冬季都市出行，兼顾功能性与时尚感。",
+    "品牌slug": "moncler",
+    "品牌英文描述": "Moncler: Luxury outdoor apparel brand renowned for high-end down jackets & fashion designs combining Italian craftsmanship, functionality, and style for exploration.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -875,7 +1031,11 @@
     "文本": "recvgxFjjAoMz6",
     "SLUG": "off-white-arrow-print-cotton-sweatshirt-recvgxFjjAoMz6",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Off-White：黑色拼接印花箭头系列卫衣，采用纯棉材质，柔软舒适。背部醒目标志“箭头”几何图腾，袖部融入艺术拼框印花细节，彰显潮流前卫设计风格。宽松休闲版型，男女皆宜，街头艺术感浓厚，展现品牌独特美学。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044405,\"id\":\"chatcmpl-DU0ZRE8RmYazaOcIlhImklY9FhRai\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":91,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1308,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1399}}",
-    "中文描述.提取值1": "Off-White：黑色拼接印花箭头系列卫衣，采用纯棉材质，柔软舒适。背部醒目标志“箭头”几何图腾，袖部融入艺术拼框印花细节，彰显潮流前卫设计风格。宽松休闲版型，男女皆宜，街头艺术感浓厚，展现品牌独特美学。"
+    "中文描述.提取值1": "Off-White：黑色拼接印花箭头系列卫衣，采用纯棉材质，柔软舒适。背部醒目标志“箭头”几何图腾，袖部融入艺术拼框印花细节，彰显潮流前卫设计风格。宽松休闲版型，男女皆宜，街头艺术感浓厚，展现品牌独特美学。",
+    "品牌slug": "off-white",
+    "品牌英文描述": "OFF-WHITE: OFF-WHITE fuses street culture with high fashion. Known for iconic diagonal stripes, industrial style, and quotation marks, it defines modern aesthetics with deconstructed apparel, footwear, and bold graphics for global enthusiasts.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -896,7 +1056,11 @@
     "文本": "recvgxFjjAdkqq",
     "SLUG": "canada-goose-white-down-parka-fur-hood-winter-coat-recvgxfjjadkqq",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Canada Goose：白色羽绒派克大衣，高蓬松鹅绒填充，防风防寒功能卓越。配真毛连帽设计，休闲都市风格，男女通用款，保暖舒适兼具时尚品味，冬季户外旅行与日常穿搭皆宜。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044459,\"id\":\"chatcmpl-DU0aJiyhgk5CqUsnZXKKpImwcUHgL\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":74,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1308,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1382}}",
-    "中文描述.提取值1": "Canada Goose：白色羽绒派克大衣，高蓬松鹅绒填充，防风防寒功能卓越。配真毛连帽设计，休闲都市风格，男女通用款，保暖舒适兼具时尚品味，冬季户外旅行与日常穿搭皆宜。"
+    "中文描述.提取值1": "Canada Goose：白色羽绒派克大衣，高蓬松鹅绒填充，防风防寒功能卓越。配真毛连帽设计，休闲都市风格，男女通用款，保暖舒适兼具时尚品味，冬季户外旅行与日常穿搭皆宜。",
+    "品牌slug": "canada-goose",
+    "品牌英文描述": "CANADA GOOSE: Luxury outerwear since 1957, designed for extreme cold. Expertly crafted parkas, jackets & accessories fusing Arctic exploration technology with metropolitan style.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -918,7 +1082,11 @@
     "文本": "recvgxFjjAYTwK",
     "SLUG": "acne-studios-stockholm-1996-black-hoodie-recvgxFjjAYTwK",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Acne Studios：黑色经典连帽卫衣，柔软棉质材质提供舒适触感，背面刺绣“STOCKHOLM 1996”字样彰显北欧极简设计魅力，宽松版型适合男女穿着，休闲街头风格，完美融合时尚与功能。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044315,\"id\":\"chatcmpl-DU0XzOBXr3rycfzwshpqLJZz3DhUj\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":77,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1312,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1389}}",
-    "中文描述.提取值1": "Acne Studios：黑色经典连帽卫衣，柔软棉质材质提供舒适触感，背面刺绣“STOCKHOLM 1996”字样彰显北欧极简设计魅力，宽松版型适合男女穿着，休闲街头风格，完美融合时尚与功能。"
+    "中文描述.提取值1": "Acne Studios：黑色经典连帽卫衣，柔软棉质材质提供舒适触感，背面刺绣“STOCKHOLM 1996”字样彰显北欧极简设计魅力，宽松版型适合男女穿着，休闲街头风格，完美融合时尚与功能。",
+    "品牌slug": "acne-studios",
+    "品牌英文描述": "ACNE STUDIOS: Acne Studios, Stockholm-based luxury fashion house, offers minimalist design, bold creativity, iconic pink packaging, ready-to-wear, denim, and accessories.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -940,7 +1108,11 @@
     "文本": "recvgxFjjAWmwH",
     "SLUG": "sp5der-black-punk-street-cotton-hoodie-recvgxfjjawmwh",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Sp5der：黑色街头系列连帽卫衣，采用优质纯棉材质，胸前亮点蜘蛛网与彩色字母图腾，融合朋克设计美学，宽松休闲版型男女皆宜，彰显千禧年代潮流态度。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044459,\"id\":\"chatcmpl-DU0aJfmrs2d7VNNY4OJvh6XGGrzOX\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":64,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1312,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1376}}",
-    "中文描述.提取值1": "Sp5der：黑色街头系列连帽卫衣，采用优质纯棉材质，胸前亮点蜘蛛网与彩色字母图腾，融合朋克设计美学，宽松休闲版型男女皆宜，彰显千禧年代潮流态度。"
+    "中文描述.提取值1": "Sp5der：黑色街头系列连帽卫衣，采用优质纯棉材质，胸前亮点蜘蛛网与彩色字母图腾，融合朋克设计美学，宽松休闲版型男女皆宜，彰显千禧年代潮流态度。",
+    "品牌slug": "sp5der",
+    "品牌英文描述": "SP5DER: Innovative, high-quality fashion brand merging cutting-edge design with performance for a unique global e-commerce shopping experience.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -962,7 +1134,11 @@
     "文本": "recvgxFjjAsfnC",
     "SLUG": "carhartt-khaki-crewneck-workwear-sweatshirt-recvgxfjjAsfnC",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Carhartt：经典工装系列卡其色圆领卫衣，厚实纯棉材质柔软保暖，胸前方形Logo简约有型，宽松中性版型适合男女穿搭，复古街头风格演绎休闲质感，日常出行与都市混搭皆宜。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044221,\"id\":\"chatcmpl-DU0WT0kUkUFDWL3ITlL8jr6336Vmg\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":76,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1306,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1382}}",
-    "中文描述.提取值1": "Carhartt：经典工装系列卡其色圆领卫衣，厚实纯棉材质柔软保暖，胸前方形Logo简约有型，宽松中性版型适合男女穿搭，复古街头风格演绎休闲质感，日常出行与都市混搭皆宜。"
+    "中文描述.提取值1": "Carhartt：经典工装系列卡其色圆领卫衣，厚实纯棉材质柔软保暖，胸前方形Logo简约有型，宽松中性版型适合男女穿搭，复古街头风格演绎休闲质感，日常出行与都市混搭皆宜。",
+    "品牌slug": "carhartt",
+    "品牌英文描述": "Carhartt: Durable workwear brand since 1889. Known for functional jackets, pants & accessories made with rugged Duck Cotton canvas. Built for workers & outdoor enthusiasts.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -984,7 +1160,11 @@
     "文本": "recvgxFjjA1HzM",
     "SLUG": "palm-angels-street-style-black-cotton-logo-hoodie-recvgxfjja1hzm",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Palm Angels：街头系列黑色连帽卫衣，选用高克重纯棉材质，柔软舒适且保暖。胸前及背部印有品牌标志性字母印花，彰显潮流态度。宽松剪裁结合抽绳帽与袋鼠兜设计，兼具实用与时尚感。男女皆宜，都市街头风格凸显个性与自由精神，适合日常休闲穿搭。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044434,\"id\":\"chatcmpl-DU0ZukeyGKQrYedvZRHuCWa8lSqqe\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":107,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1303,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1410}}",
-    "中文描述.提取值1": "Palm Angels：街头系列黑色连帽卫衣，选用高克重纯棉材质，柔软舒适且保暖。胸前及背部印有品牌标志性字母印花，彰显潮流态度。宽松剪裁结合抽绳帽与袋鼠兜设计，兼具实用与时尚感。男女皆宜，都市街头风格凸显个性与自由精神，适合日常休闲穿搭。"
+    "中文描述.提取值1": "Palm Angels：街头系列黑色连帽卫衣，选用高克重纯棉材质，柔软舒适且保暖。胸前及背部印有品牌标志性字母印花，彰显潮流态度。宽松剪裁结合抽绳帽与袋鼠兜设计，兼具实用与时尚感。男女皆宜，都市街头风格凸显个性与自由精神，适合日常休闲穿搭。",
+    "品牌slug": "palm-angels",
+    "品牌英文描述": "PALM ANGELS: Italian streetwear brand fusing LA skate culture with luxury, iconic palm prints, oversized fits, and bold designs for urban fashion.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -1005,7 +1185,11 @@
     "文本": "recvgxFjjAl0BS",
     "SLUG": "ralph-lauren-navy-wool-cable-knit-sweater-recvgxfjjal0bs",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Ralph Lauren：经典海军蓝麻花针织圆领毛衣，甄选纯羊毛材质，保暖舒适。简约立体编织纹理凸显优雅品味，适合男女皆宜，展现美式学院复古风格，日常休闲与层次穿搭皆宜。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044373,\"id\":\"chatcmpl-DU0YvZa38BqtkimP1abbdrc5eIKhU\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":75,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1308,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1383}}",
-    "中文描述.提取值1": "Ralph Lauren：经典海军蓝麻花针织圆领毛衣，甄选纯羊毛材质，保暖舒适。简约立体编织纹理凸显优雅品味，适合男女皆宜，展现美式学院复古风格，日常休闲与层次穿搭皆宜。"
+    "中文描述.提取值1": "Ralph Lauren：经典海军蓝麻花针织圆领毛衣，甄选纯羊毛材质，保暖舒适。简约立体编织纹理凸显优雅品味，适合男女皆宜，展现美式学院复古风格，日常休闲与层次穿搭皆宜。",
+    "品牌slug": "ralph-lauren",
+    "品牌英文描述": "RALPH LAUREN: Iconic American luxury lifestyle brand renowned for classic Polo shirts, tailored clothing, elegant accessories, and timeless style, offering premium craftsmanship and sophisticated living.",
+    "品类slug": "sweaters",
+    "品类英文描述": "Sweaters: premium wool, cashmere & cotton styles for men, women & kids. Perfect for casual, office & outdoor wear. Shop quality knitwear now!"
   },
   {
     "微店 ID": 1701442386,
@@ -1027,7 +1211,11 @@
     "文本": "recvgxFjjA1xMr",
     "SLUG": "stone-island-off-white-tech-windproof-jacket-recvgxfjja1xmr",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Stone Island：米白色功能型防风外套，采用高密度科技面料与立体剪裁设计，袖标徽章彰显品牌辨识度，整体简约利落兼具实用美学，男女皆宜，适合都市休闲与户外穿搭。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044216,\"id\":\"chatcmpl-DU0WOH4n0mPOUPD4BkDJsaFC6o34l\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":66,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1316,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1382}}",
-    "中文描述.提取值1": "Stone Island：米白色功能型防风外套，采用高密度科技面料与立体剪裁设计，袖标徽章彰显品牌辨识度，整体简约利落兼具实用美学，男女皆宜，适合都市休闲与户外穿搭。"
+    "中文描述.提取值1": "Stone Island：米白色功能型防风外套，采用高密度科技面料与立体剪裁设计，袖标徽章彰显品牌辨识度，整体简约利落兼具实用美学，男女皆宜，适合都市休闲与户外穿搭。",
+    "品牌slug": "stone-island",
+    "品牌英文描述": "STONE ISLAND: Italian luxury techwear with iconic compass badge. Innovative fabric & dye tech for durable, stylish urban gear. Shop classic & new collections.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -1049,7 +1237,11 @@
     "文本": "recvgxFjjA3t8x",
     "SLUG": "balenciaga-grey-patchwork-oversized-hoodie-recvgxfjja3t8x",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Balenciaga：灰色拼接卫衣，采用优质棉质混纺面料，剪裁宽松廓形设计，肩部叠搭结构展现前卫解构风格。简约圆领搭配微落肩长袖，展现极简街头时尚魅力，男女皆宜，日常与潮流并存。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044282,\"id\":\"chatcmpl-DU0XSc2J0poGV72jK44PiwN99UJtj\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":83,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1323,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1406}}",
-    "中文描述.提取值1": "Balenciaga：灰色拼接卫衣，采用优质棉质混纺面料，剪裁宽松廓形设计，肩部叠搭结构展现前卫解构风格。简约圆领搭配微落肩长袖，展现极简街头时尚魅力，男女皆宜，日常与潮流并存。"
+    "中文描述.提取值1": "Balenciaga：灰色拼接卫衣，采用优质棉质混纺面料，剪裁宽松廓形设计，肩部叠搭结构展现前卫解构风格。简约圆领搭配微落肩长袖，展现极简街头时尚魅力，男女皆宜，日常与潮流并存。",
+    "品牌slug": "balenciaga",
+    "品牌英文描述": "BALENCIAGA: Discover avant-garde luxury fashion. Shop iconic bags, sneakers, ready-to-wear & accessories. Enjoy cutting-edge design & craftsmanship. Global shipping.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -1071,7 +1263,11 @@
     "文本": "recvgxFjjAFUvM",
     "SLUG": "the-north-face-grey-white-long-down-jacket-recvgxfjjafuvm",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"The North Face 灰白色长款羽绒外套，含帽防风设计，高密度尼龙面料保暖抗寒，简约都市风格，男女皆宜冬季出行必备。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044442,\"id\":\"chatcmpl-DU0a2my8UDqOgX37XJy2mY6EOcKAP\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":50,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1306,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1356}}",
-    "中文描述.提取值1": "The North Face 灰白色长款羽绒外套，含帽防风设计，高密度尼龙面料保暖抗寒，简约都市风格，男女皆宜冬季出行必备。"
+    "中文描述.提取值1": "The North Face 灰白色长款羽绒外套，含帽防风设计，高密度尼龙面料保暖抗寒，简约都市风格，男女皆宜冬季出行必备。",
+    "品牌slug": "the-north-face",
+    "品牌英文描述": "THE NORTH FACE: Never Stop Exploring. The North Face delivers high-performance outdoor gear for global explorers. Using advanced fabric technology, our professional登山 apparel, insulated jackets, durable packs, and tents protect against extreme conditions. Empowering every journey from summits to city outskirts.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -1093,7 +1289,11 @@
     "文本": "recvgxFjjA0YZK",
     "SLUG": "ralph-lauren-black-cotton-zip-hoodie-recvgxfjja0yzk",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Ralph Lauren：经典黑色全拉链连帽卫衣，精选柔软纯棉面料，胸前红色马标刺绣彰显品牌优雅传承。双袋袋鼠口设计兼具实用与休闲感，宽松剪裁适合男女皆宜。融合美式学院风格与现代都市气息，展现经典与舒适并存的时尚魅力。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044432,\"id\":\"chatcmpl-DU0ZsrVrNczAiKMgDqRdfgINqV14e\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":94,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1312,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1406}}",
-    "中文描述.提取值1": "Ralph Lauren：经典黑色全拉链连帽卫衣，精选柔软纯棉面料，胸前红色马标刺绣彰显品牌优雅传承。双袋袋鼠口设计兼具实用与休闲感，宽松剪裁适合男女皆宜。融合美式学院风格与现代都市气息，展现经典与舒适并存的时尚魅力。"
+    "中文描述.提取值1": "Ralph Lauren：经典黑色全拉链连帽卫衣，精选柔软纯棉面料，胸前红色马标刺绣彰显品牌优雅传承。双袋袋鼠口设计兼具实用与休闲感，宽松剪裁适合男女皆宜。融合美式学院风格与现代都市气息，展现经典与舒适并存的时尚魅力。",
+    "品牌slug": "ralph-lauren",
+    "品牌英文描述": "RALPH LAUREN: Iconic American luxury lifestyle brand renowned for classic Polo shirts, tailored clothing, elegant accessories, and timeless style, offering premium craftsmanship and sophisticated living.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -1115,7 +1315,11 @@
     "文本": "recvgxFjjAAFDE",
     "SLUG": "essentials-beige-hoodie-unisex-recvgxfjj aafde",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Essentials：米色连帽卫衣，采用高密度纯棉混纺面料，触感柔软透气。正面黑色品牌标识简约醒目，宽松版型搭配实用袋鼠兜设计，展现极简街头风格。男女通穿，休闲与时尚兼备，适合都市潮流日常穿搭，彰显简约高级质感。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044246,\"id\":\"chatcmpl-DU0WsduLQXFVgdt0lRzNKuOZ95Zsf\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":96,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1307,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1403}}",
-    "中文描述.提取值1": "Essentials：米色连帽卫衣，采用高密度纯棉混纺面料，触感柔软透气。正面黑色品牌标识简约醒目，宽松版型搭配实用袋鼠兜设计，展现极简街头风格。男女通穿，休闲与时尚兼备，适合都市潮流日常穿搭，彰显简约高级质感。"
+    "中文描述.提取值1": "Essentials：米色连帽卫衣，采用高密度纯棉混纺面料，触感柔软透气。正面黑色品牌标识简约醒目，宽松版型搭配实用袋鼠兜设计，展现极简街头风格。男女通穿，休闲与时尚兼备，适合都市潮流日常穿搭，彰显简约高级质感。",
+    "品牌slug": "essentials",
+    "品牌英文描述": "Essentials is the premium casual sub-line of Fear of God, founded in Los Angeles in 2018 by Jerry Lorenzo. It features minimalist American street style, with oversized silhouettes, muted tones and quality basics. Covering hoodies, T-shirts and pants, it balances comfort and luxury, and is popular in global streetwear.",
+    "品类slug": "hoodies",
+    "品类英文描述": "Unisex hoodies: Stylish, comfortable & versatile. Soft fabric for casual, sports & outdoor. Multiple colors/sizes. Minimalist & printed designs. Perfect for layering in spring/fall. Fast fashion, affordable. Global shipping."
   },
   {
     "微店 ID": 1701442386,
@@ -1137,7 +1341,11 @@
     "文本": "recvgxFjjA5U08",
     "SLUG": "louis-vuitton-monogram-black-hooded-down-jacket-recvgxfjja5u08",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Louis Vuitton：Monogram黑色羽绒夹克，轻盈防风尼龙面料，经典LV老花低调浮现，立领连帽设计保暖实用，简约剪裁彰显都市奢华格调，男女皆宜的冬季时尚外套之选。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044412,\"id\":\"chatcmpl-DU0ZYQV1ijB0dYyKbcUPK1UosAhXk\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":68,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1310,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1378}}",
-    "中文描述.提取值1": "Louis Vuitton：Monogram黑色羽绒夹克，轻盈防风尼龙面料，经典LV老花低调浮现，立领连帽设计保暖实用，简约剪裁彰显都市奢华格调，男女皆宜的冬季时尚外套之选。"
+    "中文描述.提取值1": "Louis Vuitton：Monogram黑色羽绒夹克，轻盈防风尼龙面料，经典LV老花低调浮现，立领连帽设计保暖实用，简约剪裁彰显都市奢华格调，男女皆宜的冬季时尚外套之选。",
+    "品牌slug": "louis-vuitton",
+    "品牌英文描述": "LOUIS VUITTON: Since 1854 Paris, luxury trunks, bags, accessories & ready-to-wear. Iconic Monogram, exquisite craftsmanship & innovation in travel & fashion.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -1159,7 +1367,11 @@
     "文本": "recvgxFjjABbZE",
     "SLUG": "gallery-dept-grey-black-paint-splatter-sweatpants-recvgxfjjabbze",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Gallery Dept：灰黑拼色泼墨运动长裤，选用舒适棉质面料，手工涂鸦油漆设计展现街头艺术感。宽松直筒剪裁搭配松紧腰设计，男女皆宜。融合复古工装与现代城市潮流风格，彰显品牌解构美学，休闲穿搭凸显个性与态度。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044267,\"id\":\"chatcmpl-DU0XDrRON41O92NWaXb3sNWYMKJQS\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":93,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1306,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1399}}",
-    "中文描述.提取值1": "Gallery Dept：灰黑拼色泼墨运动长裤，选用舒适棉质面料，手工涂鸦油漆设计展现街头艺术感。宽松直筒剪裁搭配松紧腰设计，男女皆宜。融合复古工装与现代城市潮流风格，彰显品牌解构美学，休闲穿搭凸显个性与态度。"
+    "中文描述.提取值1": "Gallery Dept：灰黑拼色泼墨运动长裤，选用舒适棉质面料，手工涂鸦油漆设计展现街头艺术感。宽松直筒剪裁搭配松紧腰设计，男女皆宜。融合复古工装与现代城市潮流风格，彰显品牌解构美学，休闲穿搭凸显个性与态度。",
+    "品牌slug": "gallery-dept",
+    "品牌英文描述": "GALLERY DEPT: LA streetwear brand known for handcrafted graffiti, vintage washes, premium cotton, distressed tees, hoodies, denim. Unique artistry, retro rebellious style.",
+    "品类slug": "pants",
+    "品类英文描述": "Discover versatile pants & shorts for any occasion. Breathable, stretchy fabrics. Slim, straight & wide-leg fits. Perfect for casual, work, or exercise. Elevate your style with up to 200+ characters."
   },
   {
     "微店 ID": 1701442386,
@@ -1181,7 +1393,11 @@
     "文本": "recvgxFjjAqI1x",
     "SLUG": "casablanca-tennis-club-black-cotton-retro-tshirt-recvgxfjjaqi1x",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Casablanca：黑色Tennis Club系列短袖T恤，柔软纯棉面料呈现舒适触感，胸前几何网球场印花融合绿色与金色线条，彰显运动美学与复古巴黎风格，适合男女休闲穿搭，散发1980年代高端度假气息。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044437,\"id\":\"chatcmpl-DU0ZxAr0pFhEDPsp3Bs3XV17xEZuU\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":79,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1310,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1389}}",
-    "中文描述.提取值1": "Casablanca：黑色Tennis Club系列短袖T恤，柔软纯棉面料呈现舒适触感，胸前几何网球场印花融合绿色与金色线条，彰显运动美学与复古巴黎风格，适合男女休闲穿搭，散发1980年代高端度假气息。"
+    "中文描述.提取值1": "Casablanca：黑色Tennis Club系列短袖T恤，柔软纯棉面料呈现舒适触感，胸前几何网球场印花融合绿色与金色线条，彰显运动美学与复古巴黎风格，适合男女休闲穿搭，散发1980年代高端度假气息。",
+    "品牌slug": "casablanca",
+    "品牌英文描述": "CASABLANCA: Moroccan-inspired modern home decor & fashion accessories. Elevate lifestyle with unique, artful products blending exotic culture and contemporary aesthetics.",
+    "品类slug": "t-shirts",
+    "品类英文描述": "T-Shirts - 100% cotton, comfortable & breathable. Men's, women's & kids' styles. Simple designs & prints. Fast fashion, affordable. Shop now for casual outfits!"
   },
   {
     "微店 ID": 1701442386,
@@ -1203,7 +1419,11 @@
     "文本": "recvgxFjjA1iLs",
     "SLUG": "canada-goose-black-fur-hood-down-parka-jacket-recvgxfjja1ils",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Canada Goose：黑色奢华羽绒夹克，高蓬松鹅绒填充，搭配真毛领连帽设计，防风保暖兼具都市户外风格，男女皆宜的经典冬季外套，彰显极地探险精神与时尚品味。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044327,\"id\":\"chatcmpl-DU0YBWXm49zxTMjfYXzvJIPX8N6zO\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":69,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1296,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1365}}",
-    "中文描述.提取值1": "Canada Goose：黑色奢华羽绒夹克，高蓬松鹅绒填充，搭配真毛领连帽设计，防风保暖兼具都市户外风格，男女皆宜的经典冬季外套，彰显极地探险精神与时尚品味。"
+    "中文描述.提取值1": "Canada Goose：黑色奢华羽绒夹克，高蓬松鹅绒填充，搭配真毛领连帽设计，防风保暖兼具都市户外风格，男女皆宜的经典冬季外套，彰显极地探险精神与时尚品味。",
+    "品牌slug": "canada-goose",
+    "品牌英文描述": "CANADA GOOSE: Luxury outerwear since 1957, designed for extreme cold. Expertly crafted parkas, jackets & accessories fusing Arctic exploration technology with metropolitan style.",
+    "品类slug": "jackets",
+    "品类英文描述": "Waterproof & Windproof Jackets for Men & Women. Explore down coats, trench coats & sport jackets. Perfect for outdoor, commute & daily wear. Shop now!"
   },
   {
     "微店 ID": 1701442386,
@@ -1225,7 +1445,11 @@
     "文本": "recvgxFjjAaqxU",
     "SLUG": "nike-classic-white-cotton-t-shirt-recvgxfjjaaqxu",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"filtered\":false,\"detected\":false},\"protected_material_text\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Nike：经典白色简约Logo棉质T恤，柔软舒适透气，胸前刺绣Swoosh标志，男女皆宜，百搭休闲风格，适合日常穿搭展现运动时尚态度。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044383,\"id\":\"chatcmpl-DU0Z5fsHEB2REqST8wxS6N4xThven\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"filtered\":false,\"detected\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":59,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1308,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1367}}",
-    "中文描述.提取值1": "Nike：经典白色简约Logo棉质T恤，柔软舒适透气，胸前刺绣Swoosh标志，男女皆宜，百搭休闲风格，适合日常穿搭展现运动时尚态度。"
+    "中文描述.提取值1": "Nike：经典白色简约Logo棉质T恤，柔软舒适透气，胸前刺绣Swoosh标志，男女皆宜，百搭休闲风格，适合日常穿搭展现运动时尚态度。",
+    "品牌slug": "nike",
+    "品牌英文描述": "NIKENIKE: Leading global sportswear brand, innovating high-performance athletic gear and stylish apparel for running, basketball, soccer, training. Empowers every athlete with cutting-edge technology and the \"Just Do It\" spirit.",
+    "品类slug": "t-shirts",
+    "品类英文描述": "T-Shirts - 100% cotton, comfortable & breathable. Men's, women's & kids' styles. Simple designs & prints. Fast fashion, affordable. Shop now for casual outfits!"
   },
   {
     "微店 ID": 1701442386,
@@ -1247,7 +1471,11 @@
     "文本": "recvgxFjjAwv9K",
     "SLUG": "ralph-lauren-navy-swim-shorts-recvgxFjjAwv9K",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Ralph Lauren：经典海军蓝男士泳裤，轻盈速干尼龙材质，配白色抽绳与标志性金色刺绣骑士徽标，展现休闲优雅美式风格。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044377,\"id\":\"chatcmpl-DU0YzDrqLBzEVnrcycUqQ76QqrTUW\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":54,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1308,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1362}}",
-    "中文描述.提取值1": "Ralph Lauren：经典海军蓝男士泳裤，轻盈速干尼龙材质，配白色抽绳与标志性金色刺绣骑士徽标，展现休闲优雅美式风格。"
+    "中文描述.提取值1": "Ralph Lauren：经典海军蓝男士泳裤，轻盈速干尼龙材质，配白色抽绳与标志性金色刺绣骑士徽标，展现休闲优雅美式风格。",
+    "品牌slug": "ralph-lauren",
+    "品牌英文描述": "RALPH LAUREN: Iconic American luxury lifestyle brand renowned for classic Polo shirts, tailored clothing, elegant accessories, and timeless style, offering premium craftsmanship and sophisticated living.",
+    "品类slug": "pants",
+    "品类英文描述": "Discover versatile pants & shorts for any occasion. Breathable, stretchy fabrics. Slim, straight & wide-leg fits. Perfect for casual, work, or exercise. Elevate your style with up to 200+ characters."
   },
   {
     "微店 ID": 1701442386,
@@ -1268,7 +1496,11 @@
     "文本": "recvgxFjjAI29d",
     "SLUG": "toysrobot-smart-electronic-dog-space-design-toy-recvgxfjjai29d",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Robot Dog：未来科技系列白灰智能电子宠物狗，ABS环保材质打造，具备歌舞表演、运动互动、跳跃迎宾等多种炫技功能，动感设计融合太空科幻风格，适合男女老少，现代智能科技玩具新品。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044205,\"id\":\"chatcmpl-DU0WDhcVAJqYnYzg8CUna7MBi4hcq\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":67,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1310,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1377}}",
-    "中文描述.提取值1": "Robot Dog：未来科技系列白灰智能电子宠物狗，ABS环保材质打造，具备歌舞表演、运动互动、跳跃迎宾等多种炫技功能，动感设计融合太空科幻风格，适合男女老少，现代智能科技玩具新品。"
+    "中文描述.提取值1": "Robot Dog：未来科技系列白灰智能电子宠物狗，ABS环保材质打造，具备歌舞表演、运动互动、跳跃迎宾等多种炫技功能，动感设计融合太空科幻风格，适合男女老少，现代智能科技玩具新品。",
+    "品牌slug": "",
+    "品牌英文描述": "",
+    "品类slug": "toys",
+    "品类英文描述": "Engaging Kids Toys for 0-12 Years: Educational Building Blocks, Plush Dolls, Outdoor Toys, Party Decorations. ASTM & CE Certified. Ideal for Holiday Gifting, Daily Play & Early Education—Safe, Durable & Fun!"
   },
   {
     "微店 ID": 1701442386,
@@ -1289,7 +1521,11 @@
     "文本": "recvgxFjjAayCF",
     "SLUG": "toyssvaiwr-silver-smart-robotic-dog-voice-control-toy-recvgxfjj-aaycf",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Svaiwr：银灰色AI智能陪伴机器狗，融合仿生机械设计与高灵敏感应系统，支持语音指令、编程互动与情感反馈，采用航空级合金机身，造型未来科技感十足，通用男女老少适用，启发式教育玩具与智能陪伴机器人完美结合，展现次世代人工智能科技魅力。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044213,\"id\":\"chatcmpl-DU0WLvaFczDlpgRw0aWwvR2tc87ZF\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"service_tier\":\"default\",\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":93,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1316,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":1409}}",
-    "中文描述.提取值1": "Svaiwr：银灰色AI智能陪伴机器狗，融合仿生机械设计与高灵敏感应系统，支持语音指令、编程互动与情感反馈，采用航空级合金机身，造型未来科技感十足，通用男女老少适用，启发式教育玩具与智能陪伴机器人完美结合，展现次世代人工智能科技魅力。"
+    "中文描述.提取值1": "Svaiwr：银灰色AI智能陪伴机器狗，融合仿生机械设计与高灵敏感应系统，支持语音指令、编程互动与情感反馈，采用航空级合金机身，造型未来科技感十足，通用男女老少适用，启发式教育玩具与智能陪伴机器人完美结合，展现次世代人工智能科技魅力。",
+    "品牌slug": "",
+    "品牌英文描述": "",
+    "品类slug": "toys",
+    "品类英文描述": "Engaging Kids Toys for 0-12 Years: Educational Building Blocks, Plush Dolls, Outdoor Toys, Party Decorations. ASTM & CE Certified. Ideal for Holiday Gifting, Daily Play & Early Education—Safe, Durable & Fun!"
   },
   {
     "微店 ID": 1701442386,
@@ -1310,6 +1546,10 @@
     "文本": "recvgxFjjAsCGS",
     "SLUG": "toyskidbe-rx-f-white-smart-robot-dog-recvgxfjjascgs",
     "中文描述": "{\"choices\":[{\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"protected_material_code\":{\"detected\":false,\"filtered\":false},\"protected_material_text\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":[],\"content\":\"Kidbe：RX-F白色AI仿生智能机械狗，支持语音声控与手柄遥控，具灯光音效与编程系统设计，科技未来风格，趣味跳舞互动玩具，男女皆宜，激发儿童创造与探索乐趣。\",\"refusal\":null,\"role\":\"assistant\"}}],\"created\":1776044323,\"id\":\"chatcmpl-DU0Y7nvrR23gZVAohU8dZuKcFK5v8\",\"model\":\"gpt-5-chat-2025-10-03\",\"object\":\"chat.completion\",\"prompt_filter_results\":[{\"prompt_index\":0,\"content_filter_results\":{\"hate\":{\"filtered\":false,\"severity\":\"safe\"},\"jailbreak\":{\"detected\":false,\"filtered\":false},\"self_harm\":{\"filtered\":false,\"severity\":\"safe\"},\"sexual\":{\"filtered\":false,\"severity\":\"safe\"},\"violence\":{\"filtered\":false,\"severity\":\"safe\"}}}],\"system_fingerprint\":\"fp_ad66631dec\",\"usage\":{\"completion_tokens\":64,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"prompt_tokens\":1314,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":1280},\"total_tokens\":1378}}",
-    "中文描述.提取值1": "Kidbe：RX-F白色AI仿生智能机械狗，支持语音声控与手柄遥控，具灯光音效与编程系统设计，科技未来风格，趣味跳舞互动玩具，男女皆宜，激发儿童创造与探索乐趣。"
+    "中文描述.提取值1": "Kidbe：RX-F白色AI仿生智能机械狗，支持语音声控与手柄遥控，具灯光音效与编程系统设计，科技未来风格，趣味跳舞互动玩具，男女皆宜，激发儿童创造与探索乐趣。",
+    "品牌slug": "",
+    "品牌英文描述": "",
+    "品类slug": "toys",
+    "品类英文描述": "Engaging Kids Toys for 0-12 Years: Educational Building Blocks, Plush Dolls, Outdoor Toys, Party Decorations. ASTM & CE Certified. Ideal for Holiday Gifting, Daily Play & Early Education—Safe, Durable & Fun!"
   }
 ]
