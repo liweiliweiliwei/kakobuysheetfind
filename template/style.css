@@ -76,9 +76,14 @@ button {
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 26px;
+    font-weight: 900;
     letter-spacing: -0.05em;
+    background-image: var(--theme-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
 }
 
 .header-info {
@@ -584,10 +589,13 @@ button {
 }
 
 .footer-logo {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 800;
-    color: #ffffff;
     letter-spacing: -0.5px;
+    background-image: var(--theme-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .footer-links {
