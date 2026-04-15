@@ -163,7 +163,7 @@ function buildSite() {
             const heroBg = document.querySelector('.hero-bg-text');
             const heroTitle = document.querySelector('.hero-title');
             heroBg.textContent = currentCategory === 'all' ? '${SITE_NAME}' : currentCategory;
-            heroTitle.textContent = currentBrand === 'all' ? (currentCategory === 'all' ? 'Premium Drop' : currentCategory) : currentBrand;
+            heroTitle.textContent = currentBrand === 'all' ? (currentCategory === 'all' ? 'Kakobuysheetfind' : currentCategory) : currentBrand;
 
             if (descEl) {
                 let descText = "";
@@ -303,7 +303,7 @@ function buildSite() {
         const productDetailsRegex = /<div class="product-details">[\s\S]*?<\/div>(\s*<\/div>)?/; 
         finalProductHtml = finalProductHtml.replace(productDetailsRegex, detailSectionHtml);
 
-        finalProductHtml = finalProductHtml.replace(/<button class="buy-now-btn">.*?<\/button>/, `<a href="${buyUrl}" target="_blank" class="buy-now-btn" style="text-decoration:none;display:flex;align-items:center;justify-content:center;">Buy on ${SITE_NAME}</a>`);
+        finalProductHtml = finalProductHtml.replace(/<button class="buy-now-btn">.*?<\/button>/, `<a href="${buyUrl}" target="_blank" class="buy-now-btn" style="text-decoration:none;display:flex;align-items:center;justify-content:center;">Buy On Kakobuy</a>`);
 
         // 替换推荐商品
         // 显示同一品类下的所有商品（排除当前商品）

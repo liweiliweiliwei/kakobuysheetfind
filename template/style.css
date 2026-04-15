@@ -7,6 +7,8 @@
 
 :root {
     --primary-color: #000000;
+    --theme-gradient: linear-gradient(to right, #db2777, #9333ea);
+    --theme-solid-primary: #db2777;
     --text-color: #000000;
     --text-gray: #757575;
     --text-light: #9ca3af;
@@ -77,7 +79,6 @@ button {
     font-size: 20px;
     font-weight: 800;
     letter-spacing: -0.05em;
-    text-transform: uppercase;
 }
 
 .header-info {
@@ -114,17 +115,19 @@ button {
 }
 
 .discord-btn {
-    background: #5865F2;
+    background-image: var(--theme-gradient);
     color: white;
     padding: 10px 24px;
     border-radius: 9999px;
     font-size: 13px;
     font-weight: 600;
+    opacity: 0.95;
 }
 
 .discord-btn:hover {
-    background: #4752C4;
+    opacity: 1;
     transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(219, 39, 119, 0.3);
 }
 
 /* ===== Filters ===== */
@@ -154,8 +157,10 @@ button {
 }
 
 .filter-btn.active {
-    background: black;
+    background-image: var(--theme-gradient);
+    border-color: transparent;
     color: white;
+    box-shadow: 0 2px 10px rgba(147, 51, 234, 0.2);
 }
 
 /* ===== Hero Section ===== */
@@ -389,20 +394,24 @@ button {
 
 .buy-now-btn {
     width: 100%;
-    background: black;
+    background-image: var(--theme-gradient);
     color: white;
     padding: 24px;
     border-radius: 6px;
     font-weight: 700;
     font-size: 15px;
-    text-transform: uppercase;
     letter-spacing: 0.15em;
     margin-bottom: 24px;
+    opacity: 0.95;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
 .buy-now-btn:hover {
-    background: #1f2937;
+    opacity: 1;
     transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(219, 39, 119, 0.2);
 }
 
 .trust-badges {
