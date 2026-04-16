@@ -63,8 +63,11 @@ function buildSite() {
     const indexTemplate = fs.readFileSync(path.join(TEMPLATE_DIR, 'index.html'), 'utf-8');
     const productTemplate = fs.readFileSync(path.join(TEMPLATE_DIR, 'product.html'), 'utf-8');
 
-    // 复制 CSS
+    // 复制静态资源
     copyFile(path.join(TEMPLATE_DIR, 'style.css'), path.join(OUTPUT_DIR, 'style.css'));
+    if (fs.existsSync(path.join(TEMPLATE_DIR, 'favicon.ico'))) {
+        copyFile(path.join(TEMPLATE_DIR, 'favicon.ico'), path.join(OUTPUT_DIR, 'favicon.ico'));
+    }
 
     // 3. 构建 SLUG 映射表（用于内部链接）
     const slugMap = {};
@@ -300,7 +303,7 @@ function buildSite() {
         // 替换面包屑
         const breadcrumbHtml = `
                 <nav class="breadcrumbs">
-                    <a href="index.html" class="breadcrumb-item">Home</a>
+                    <a href="https://kakobuysheetfind.org/" class="breadcrumb-item">Home</a>
                     <span>/</span>
                     <span class="breadcrumb-item">${escapeHtml(category)}</span>
                     <span>/</span>
