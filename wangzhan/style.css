@@ -541,6 +541,109 @@ button {
     color: #dc2626; /* 红色参考主题 */
 }
 
+/* ===== Footer Info Sections (FAQ & Disclaimer) ===== */
+.site-info-sections {
+    background: #080808;
+    border-top: 1px solid #1a1a1a;
+    padding: 64px 0;
+    color: #e5e7eb;
+}
+
+.info-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.faq-section {
+    margin-bottom: 64px;
+}
+
+.info-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-title svg {
+    color: #ec4899;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.faq-item h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #f3f4f6;
+    margin-bottom: 12px;
+}
+
+.faq-item p, .faq-item ul {
+    font-size: 13px;
+    color: #9ca3af;
+    line-height: 1.6;
+}
+
+.faq-item ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.disclaimer-box {
+    background: #111;
+    border: 1px solid #1a1a1a;
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.disclaimer-text {
+    font-size: 13px;
+    color: #9ca3af;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.transparency-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #1f1f1f;
+}
+
+.transparency-item {
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 1024px) {
+    .faq-grid { grid-template-columns: 1fr; }
+    .transparency-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+    .info-container { padding: 0 20px; }
+    .transparency-grid { grid-template-columns: 1fr; }
+}
+
 /* ===== Footer ===== */
 .footer {
     background: #000000;
