@@ -74,8 +74,25 @@ function buildSite() {
     });
 
     // 4. 提取分类和品牌及其关系
-    const categories = [...new Set(rawData.map(item => item['品类']))].filter(Boolean);
-    const brands = [...new Set(rawData.map(item => item['品牌']))].filter(Boolean);
+    const categories = [...new Set(rawData.map(item => item['品类']))]
+        .filter(Boolean)
+        .sort((a, b) => {
+            const isAOther = a.toLowerCase() === 'other';
+            const isBOther = b.toLowerCase() === 'other';
+            if (isAOther && !isBOther) return 1;
+            if (!isAOther && isBOther) return -1;
+            return a.localeCompare(b);
+        });
+
+    const brands = [...new Set(rawData.map(item => item['品牌']))]
+        .filter(Boolean)
+        .sort((a, b) => {
+            const isAOther = a.toLowerCase() === 'other';
+            const isBOther = b.toLowerCase() === 'other';
+            if (isAOther && !isBOther) return 1;
+            if (!isAOther && isBOther) return -1;
+            return a.localeCompare(b);
+        });
 
     // 映射品类与品牌的关系
     const brandToCategories = {};
