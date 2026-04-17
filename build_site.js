@@ -303,7 +303,7 @@ function buildSite() {
         // 替换面包屑
         const breadcrumbHtml = `
                 <nav class="breadcrumbs">
-                    <a href="https://kakobuysheetfind.org/" class="breadcrumb-item">Home</a>
+                    <a href="/index.html" class="breadcrumb-item">Home</a>
                     <span>/</span>
                     <span class="breadcrumb-item">${escapeHtml(category)}</span>
                     <span>/</span>
