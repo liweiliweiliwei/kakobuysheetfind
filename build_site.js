@@ -128,7 +128,7 @@ function buildSite() {
         const productPage = slugMap[index];
         const formattedPrice = Number(item['美元'] || 0).toFixed(2);
         productCardsHtml += `
-        <a href="${productPage}" class="product-card" data-category="${escapeHtml(item['品类'])}" data-brand="${escapeHtml(item['品牌'])}">
+        <a href="/${productPage}" class="product-card" data-category="${escapeHtml(item['品类'])}" data-brand="${escapeHtml(item['品牌'])}">
             <div class="card-image-wrap">
                 <img src="${escapeHtml(item['SKU图片地址'])}" alt="${escapeHtml(item['品牌'])} ${escapeHtml(item['Tittle'])} - Buy on ${SITE_NAME}" loading="lazy">
             </div>
@@ -331,7 +331,7 @@ function buildSite() {
         let recCardsHtml = '';
         recList.forEach(rec => {
             recCardsHtml += `
-            <a href="${slugMap[rawData.indexOf(rec)]}" class="rec-card">
+            <a href="/${slugMap[rawData.indexOf(rec)]}" class="rec-card">
                 <div class="rec-image-box">
                     <img src="${escapeHtml(rec['SKU图片地址'])}" loading="lazy" alt="${escapeHtml(rec['Tittle'])}">
                 </div>
