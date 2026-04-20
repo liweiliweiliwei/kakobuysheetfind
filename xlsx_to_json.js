@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // 配置文件路径
-const inputFilePath = path.join(__dirname, '123.xlsx');
+const goodsDirPath = path.join(__dirname, 'goods');
 const brandFilePath = path.join(__dirname, 'branch.xlsx');
 const categoryFilePath = path.join(__dirname, 'pinlei.xlsx');
 const outputFilePath = path.join(__dirname, '123.json');
@@ -39,9 +39,9 @@ function normalizeKey(str) {
 }
 
 try {
-    // 检查文件是否存在
+    // 检查文件/目录是否存在
     const filesToCheck = [
-        { path: inputFilePath, name: '商品主表' },
+        { path: goodsDirPath, name: '商品文件夹' },
         { path: brandFilePath, name: '品牌表' },
         { path: categoryFilePath, name: '品类表' }
     ];
@@ -91,11 +91,33 @@ try {
     });
     console.log(`成功加载 ${categoryMap.size} 个品类元数据`);
 
-    // 3. 读取商品主表 (123.xlsx)
-    console.log(`正在读取商品文件: ${inputFilePath}`);
-    const workbook = XLSX.readFile(inputFilePath);
-    const worksheet = workbook.Sheets[workbook.SheetNames[0]];
-    const jsonData = XLSX.utils.sheet_to_json(worksheet);
+    // 3. 读取 goods 文件夹下的所有商品表
+    console.log(`正在读取商品文件夹: ${goodsDirPath}`);
+    let jsonData = [];
+    const files = fs.readdirSync(goodsDirPath);
+    // 过滤出 .xlsx 文件，且排除以 ~$ 开头的临时隐藏文件
+    const xlsxFiles = files.filter(f => f.endsWith('.xlsx') && !f.startsWith('~$'));
+    
+    if (xlsxFiles.length === 0) {
+        console.warn(`警告: ${goodsDirPath} 中没有找到.xlsx商品文件`);
+    }
+
+    xlsxFiles.forEach(file => {
+        const filePath = path.join(goodsDirPath, file);
+        console.log(`  -> 读取商品文件: ${file}`);
+        try {
+            const workbook = XLSX.readFile(filePath);
+            const worksheetName = workbook.SheetNames[0];
+            if (worksheetName) {
+                const worksheet = workbook.Sheets[worksheetName];
+                const sheetData = XLSX.utils.sheet_to_json(worksheet);
+                jsonData = jsonData.concat(sheetData);
+            }
+        } catch (err) {
+            console.error(`读取文件 ${file} 时遇到错误:`, err);
+        }
+    });
+    console.log(`成功加载所有商品文件，共计读取 ${jsonData.length} 条数据。`);
 
     // 4. 计算关联整合（含纠错逻辑）
     console.log(`正在执行优化后的关联逻辑...`);
