@@ -145,7 +145,15 @@ try {
     if (unmatchedBrands.size > 0) console.log(`未匹配品牌:`, Array.from(unmatchedBrands));
     if (unmatchedCategories.size > 0) console.log(`未匹配品类:`, Array.from(unmatchedCategories));
 
-    // 5. 将 JSON 写入文件
+    // 5. 随机打乱顺序 (Fisher-Yates 洗牌算法)
+    console.log(`正在随机打乱数据顺序...`);
+    for (let i = enrichedData.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [enrichedData[i], enrichedData[j]] = [enrichedData[j], enrichedData[i]];
+    }
+    console.log(`数据顺序已随机打乱！`);
+
+    // 6. 将 JSON 写入文件
     console.log(`正在写入文件: ${outputFilePath}`);
     fs.writeFileSync(outputFilePath, JSON.stringify(enrichedData, null, 2), 'utf-8');
 
