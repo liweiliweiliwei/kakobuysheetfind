@@ -296,7 +296,20 @@ function buildSite() {
             "name": title,
             "description": prodDesc,
             "brand": { "@type": "Brand", "name": brand },
-            "offers": { "@type": "Offer", "price": formattedItemPrice, "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+            "offers": { 
+                "@type": "Offer", 
+                "price": formattedItemPrice, 
+                "priceCurrency": "USD", 
+                "availability": "https://schema.org/InStock",
+                "hasMerchantReturnPolicy": {
+                    "@type": "MerchantReturnPolicy",
+                    "applicableCountry": "US",
+                    "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                    "merchantReturnDays": 30,
+                    "returnMethod": "https://schema.org/ReturnByMail",
+                    "returnFees": "https://schema.org/FreeReturn"
+                }
+            }
         });
         finalProductHtml = finalProductHtml.replace('PLACEHOLDER_JSONLD', jsonLd);
 
