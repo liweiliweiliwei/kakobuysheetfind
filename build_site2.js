@@ -1,14 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 
-// 路径配置 - 使用 template2 模板，输出到 wangzhan2
+// 路径配置
 const DATA_FILE = path.join(__dirname, '123.json');
 const TEMPLATE_DIR = path.join(__dirname, 'template2');
 const OUTPUT_DIR = path.join(__dirname, 'wangzhan2');
 
 // SEO 配置
-const SITE_DOMAIN = 'https://kakobuysheetfind.org';
-const SITE_NAME = 'Kakobuysheetfind';
+const SITE_DOMAIN = 'https://mulebuy-sheets.com';
+const SITE_NAME = 'Mulebuy Sheets';
 
 // 确保输出目录存在
 if (!fs.existsSync(OUTPUT_DIR)) {
@@ -50,7 +50,7 @@ function escapeAttr(text) {
 }
 
 function buildSite() {
-    console.log('🚀 开始生成赛博朋克风格静态网站...');
+    console.log('开始生成静态网站（含元数据增强优化）...');
 
     // 1. 读取数据
     if (!fs.existsSync(DATA_FILE)) {
@@ -128,7 +128,7 @@ function buildSite() {
         const productPage = slugMap[index];
         const formattedPrice = Number(item['美元'] || 0).toFixed(2);
         productCardsHtml += `
-        <a href="${productPage}" class="product-card" data-category="${escapeHtml(item['品类'])}" data-brand="${escapeHtml(item['品牌'])}">
+        <a href="/${productPage}" class="product-card" data-category="${escapeHtml(item['品类'])}" data-brand="${escapeHtml(item['品牌'])}">
             <div class="card-image-wrap">
                 <img src="${escapeHtml(item['SKU图片地址'])}" alt="${escapeHtml(item['品牌'])} ${escapeHtml(item['Tittle'])} - Buy on ${SITE_NAME}" loading="lazy">
             </div>
@@ -137,14 +137,14 @@ function buildSite() {
                 <h3 class="card-name">${escapeHtml(item['Tittle'])}</h3>
                 <div class="card-bottom">
                     <p class="card-price">$${formattedPrice}</p>
-                    <span class="view-details">Discover</span>
+                    <span class="view-details">View &#8594;</span>
                 </div>
             </div>
         </a>`;
     });
 
-    const indexMetaDesc = `Shop ${rawData.length}+ premium designer items from ${brands.slice(0, 8).join(', ')} and more. Best deals on ${categories.slice(0, 6).join(', ')} at ${SITE_NAME}. Verified quality, global shipping.`;
-    const indexMetaKeywords = `${SITE_NAME}, kakobuy, kakobuy spreadsheet, kakobuysheetfind, ${categories.join(', ')}, brands, replica, designer fashion`;
+    const indexMetaDesc = `Mulebuy Sheets is your free spreadsheet guide to the best replica fashion. Browse ${rawData.length}+ verified items from ${brands.slice(0, 6).join(', ')} and more — ${categories.slice(0, 5).join(', ')} at the lowest prices. Shop via Mulebuy, Kakobuy, Oopbuy and other trusted agents.`;
+    const indexMetaKeywords = `mulebuy sheets, mulebuy spreadsheet, mulebuy-sheets.com, ${SITE_NAME}, kakobuy, replica fashion, ${categories.join(', ')}, ${brands.slice(0, 20).join(', ')}, designer replica, best replica site`;
 
     let finalIndexHtml = indexTemplate;
     finalIndexHtml = finalIndexHtml.replace('PLACEHOLDER_META_DESCRIPTION', escapeAttr(indexMetaDesc));
@@ -152,7 +152,8 @@ function buildSite() {
     finalIndexHtml = finalIndexHtml.replace('PLACEHOLDER_META_KEYWORDS', escapeAttr(indexMetaKeywords));
 
     const filterSectionRegex = /<section class="filters-section">[\s\S]*?<\/section>/;
-    const newFilterSection = `<section class="filters-section"><div class="filter-group">${categoryFiltersHtml}</div><div class="filter-group">${brandFiltersHtml}</div></section>`;
+    // 品牌行加 filter-group-brands，默认隐藏
+    const newFilterSection = `<section class="filters-section"><div class="filter-group filter-group-cats">${categoryFiltersHtml}</div><div class="filter-group filter-group-brands">${brandFiltersHtml}</div></section>`;
     finalIndexHtml = finalIndexHtml.replace(filterSectionRegex, newFilterSection);
 
     const productGridRegex = /<section class="product-grid">[\s\S]*?<\/section>/;
@@ -167,7 +168,7 @@ function buildSite() {
         if (item['品牌'] && item['品牌英文描述']) brandDescMap[item['品牌']] = item['品牌英文描述'];
     });
 
-    // 注入筛选脚本
+    // 注入过滤脚本（包含品牌行展开逻辑）
     const filterScript = `<script>
     const categoryDescMap = ${JSON.stringify(categoryDescMap)};
     const brandDescMap = ${JSON.stringify(brandDescMap)};
@@ -176,6 +177,7 @@ function buildSite() {
         const brdBtns = document.querySelectorAll('.filter-btn[data-type="brand"]');
         const products = document.querySelectorAll('.product-card');
         const descEl = document.querySelector('.hero-description');
+        const brandsRow = document.querySelector('.filter-group-brands');
         let currentCategory = 'all';
         let currentBrand = 'all';
 
@@ -183,12 +185,26 @@ function buildSite() {
             const heroBg = document.querySelector('.hero-bg-text');
             const heroTitle = document.querySelector('.hero-title');
             heroBg.textContent = currentCategory === 'all' ? '${SITE_NAME}' : currentCategory;
-            heroTitle.textContent = currentBrand === 'all' ? (currentCategory === 'all' ? 'Kakobuysheetfind' : currentCategory) : currentBrand;
+            heroTitle.textContent = currentBrand === 'all' ? (currentCategory === 'all' ? '${SITE_NAME}' : currentCategory) : currentBrand;
+
+            // 品牌行展开/收起
+            if (brandsRow) {
+                if (currentCategory !== 'all') {
+                    brandsRow.classList.add('visible');
+                } else {
+                    brandsRow.classList.remove('visible');
+                    // 收起时重置品牌选择
+                    currentBrand = 'all';
+                    brdBtns.forEach(b => b.classList.remove('active'));
+                    const allBrdBtn = document.querySelector('.filter-btn[data-type="brand"][data-filter="all"]');
+                    if (allBrdBtn) allBrdBtn.classList.add('active');
+                }
+            }
 
             if (descEl) {
-                let descText = "";
+                let descText = '';
                 if (currentCategory === 'all' && currentBrand === 'all') {
-                    descText = "";
+                    descText = '';
                 } else if (currentCategory === 'all' && currentBrand !== 'all') {
                     descText = brandDescMap[currentBrand] || '';
                 } else if (currentCategory !== 'all' && currentBrand === 'all') {
@@ -196,7 +212,6 @@ function buildSite() {
                 } else {
                     descText = brandDescMap[currentBrand] || '';
                 }
-                
                 if (descText) {
                     descEl.textContent = descText;
                     descEl.style.display = 'block';
@@ -263,11 +278,11 @@ function buildSite() {
         let detailsHtml = `
             <div class="product-details">
                 <h4 class="detail-section-title">Product Description</h4>
-                <div class="product-description-text" style="margin-bottom: 32px; line-height: 1.6; color: var(--text-secondary); font-size: 0.95rem;">${escapeHtml(prodDesc)}</div>
+                <div class="product-description-text" style="margin-bottom: 32px; line-height: 1.6; color: var(--text-muted); font-size: 0.95rem;">${escapeHtml(prodDesc)}</div>
                 
                 ${brandDesc ? `
                 <h4 class="detail-section-title">About ${escapeHtml(brand)}</h4>
-                <div class="brand-description-text" style="margin-bottom: 32px; line-height: 1.6; color: var(--text-secondary); font-size: 0.9rem; font-style: italic; border-left: 2px solid var(--cyber-border); padding-left: 15px;">${escapeHtml(brandDesc)}</div>
+                <div class="brand-description-text" style="margin-bottom: 32px; line-height: 1.6; color: var(--text-muted); font-size: 0.9rem; font-style: italic; border-left: 2px solid var(--border-color); padding-left: 15px;">${escapeHtml(brandDesc)}</div>
                 ` : ''}
 
                 ${categoryDesc ? `
@@ -296,7 +311,20 @@ function buildSite() {
             "name": title,
             "description": prodDesc,
             "brand": { "@type": "Brand", "name": brand },
-            "offers": { "@type": "Offer", "price": formattedItemPrice, "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+            "offers": { 
+                "@type": "Offer", 
+                "price": formattedItemPrice, 
+                "priceCurrency": "USD", 
+                "availability": "https://schema.org/InStock",
+                "hasMerchantReturnPolicy": {
+                    "@type": "MerchantReturnPolicy",
+                    "applicableCountry": "US",
+                    "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                    "merchantReturnDays": 30,
+                    "returnMethod": "https://schema.org/ReturnByMail",
+                    "returnFees": "https://schema.org/FreeReturn"
+                }
+            }
         });
         finalProductHtml = finalProductHtml.replace('PLACEHOLDER_JSONLD', jsonLd);
 
@@ -315,7 +343,7 @@ function buildSite() {
         finalProductHtml = finalProductHtml.replace(/<h1 class="product-title">.*?<\/h1>/, `<h1 class="product-title">${escapeHtml(title)}</h1>`);
         finalProductHtml = finalProductHtml.replace(/<p class="product-price-large">.*?<\/p>/, `<p class="product-price-large">$${formattedItemPrice}</p>`);
         
-        // 替换商品详情区域为增强内容
+        // 替换商品详情区域为我们构建的增强内容
         const detailSectionHtml = `
             <div class="product-details">
                 ${detailsHtml}
@@ -325,25 +353,31 @@ function buildSite() {
 
         finalProductHtml = finalProductHtml.replace(/<button class="buy-now-btn">.*?<\/button>/, `<a href="${buyUrl}" target="_blank" class="buy-now-btn" style="text-decoration:none;display:flex;align-items:center;justify-content:center;">Buy On Kakobuy</a>`);
 
-        // 替换推荐商品 - 显示同品类下的所有商品（排除当前）
+        // 替换推荐商品
+        // 显示同一品类下的所有商品（排除当前商品）
         const recList = rawData.filter((p, i) => i !== index && p['品类'] === category);
         let recCardsHtml = '';
         recList.forEach(rec => {
             recCardsHtml += `
-            <a href="${slugMap[rawData.indexOf(rec)]}" class="rec-card">
+            <a href="/${slugMap[rawData.indexOf(rec)]}" class="rec-card">
                 <div class="rec-image-box">
                     <img src="${escapeHtml(rec['SKU图片地址'])}" loading="lazy" alt="${escapeHtml(rec['Tittle'])}">
                 </div>
-                <p class="rec-brand">${escapeHtml(rec['品牌'])}</p>
-                <h3 class="rec-name">${escapeHtml(rec['Tittle'])}</h3>
-                <p class="rec-price">$${Number(rec['美元']).toFixed(2)}</p>
+                <div class="rec-info">
+                    <p class="rec-brand">${escapeHtml(rec['品牌'])}</p>
+                    <h3 class="rec-name">${escapeHtml(rec['Tittle'])}</h3>
+                    <p class="rec-price">$${Number(rec['美元']).toFixed(2)}</p>
+                </div>
             </a>`;
         });
 
         const newRecommendedSectionHtml = `
         <section class="recommended-section">
             <div class="container">
-                <h2 class="recommended-title">You May Also Like</h2>
+                <div class="recommended-header">
+                    <h2 class="recommended-title">You May Also Like</h2>
+                    <span class="recommended-sub">${escapeHtml(category)}</span>
+                </div>
                 <div class="rec-grid">
                     ${recCardsHtml}
                 </div>
@@ -363,8 +397,7 @@ function buildSite() {
     fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap.xml'), sitemapXml);
     fs.writeFileSync(path.join(OUTPUT_DIR, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE_DOMAIN}/sitemap.xml`);
 
-    console.log('🎉 赛博朋克风格网站构建完成！输出目录: wangzhan2/');
-    console.log(`   共生成 ${rawData.length} 个产品详情页`);
+    console.log('🎉 包含元数据增强的网站构建已完成！');
 }
 
 buildSite();
