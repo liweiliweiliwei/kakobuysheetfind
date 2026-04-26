@@ -99,12 +99,15 @@ function buildSite() {
 
     // 映射品类与品牌的关系
     const brandToCategories = {};
+    const categoryToBrands = {};
     rawData.forEach(item => {
         const brd = item['品牌'];
         const cat = item['品类'];
         if (brd && cat) {
             if (!brandToCategories[brd]) brandToCategories[brd] = new Set();
             brandToCategories[brd].add(cat);
+            if (!categoryToBrands[cat]) categoryToBrands[cat] = new Set();
+            categoryToBrands[cat].add(brd);
         }
     });
 
@@ -153,7 +156,7 @@ function buildSite() {
 
     const filterSectionRegex = /<section class="filters-section">[\s\S]*?<\/section>/;
     // 品牌行加 filter-group-brands，默认隐藏
-    const newFilterSection = `<section class="filters-section"><div class="filter-group filter-group-cats">${categoryFiltersHtml}</div><div class="filter-group filter-group-brands">${brandFiltersHtml}</div></section>`;
+    const newFilterSection = `<section class="filters-section"><div class="filter-group filter-group-cats" id="categoryGroup">${categoryFiltersHtml}</div><div class="filter-group filter-group-brands" id="brandGroup" hidden aria-hidden="true">${brandFiltersHtml}</div></section>`;
     finalIndexHtml = finalIndexHtml.replace(filterSectionRegex, newFilterSection);
 
     const productGridRegex = /<section class="product-grid">[\s\S]*?<\/section>/;
@@ -172,78 +175,87 @@ function buildSite() {
     const filterScript = `<script>
     const categoryDescMap = ${JSON.stringify(categoryDescMap)};
     const brandDescMap = ${JSON.stringify(brandDescMap)};
+    const categoryToBrands = ${JSON.stringify(Object.fromEntries(Object.entries(categoryToBrands).map(([category, set]) => [category, Array.from(set)])))};
     document.addEventListener('DOMContentLoaded', function() {
-        const catBtns = document.querySelectorAll('.filter-btn[data-type="category"]');
-        const brdBtns = document.querySelectorAll('.filter-btn[data-type="brand"]');
+        const categoryGroup = document.getElementById('categoryGroup');
+        const brandGroup = document.getElementById('brandGroup');
         const products = document.querySelectorAll('.product-card');
         const descEl = document.querySelector('.hero-description');
-        const brandsRow = document.querySelector('.filter-group-brands');
+        const heroBg = document.querySelector('.hero-bg-text');
+        const heroTitle = document.querySelector('.hero-title');
+        const backToTop = document.getElementById('backToTop');
         let currentCategory = 'all';
         let currentBrand = 'all';
 
+        const showBrandsForCategory = (category) => {
+            const brandButtons = Array.from(brandGroup.querySelectorAll('[data-type="brand"]')).filter(btn => btn.getAttribute('data-filter') !== 'all');
+            brandButtons.forEach(btn => {
+                const cats = (btn.getAttribute('data-categories') || '').split(',').filter(Boolean);
+                btn.style.display = (category === 'all' || cats.includes(category)) ? 'inline-flex' : 'none';
+            });
+            brandGroup.hidden = category === 'all';
+            brandGroup.setAttribute('aria-hidden', category === 'all' ? 'true' : 'false');
+        };
+
         function updateDisplay() {
-            const heroBg = document.querySelector('.hero-bg-text');
-            const heroTitle = document.querySelector('.hero-title');
             heroBg.textContent = currentCategory === 'all' ? '${SITE_NAME}' : currentCategory;
             heroTitle.textContent = currentBrand === 'all' ? (currentCategory === 'all' ? '${SITE_NAME}' : currentCategory) : currentBrand;
 
-            // 品牌行展开/收起
-            if (brandsRow) {
-                if (currentCategory !== 'all') {
-                    brandsRow.classList.add('visible');
-                } else {
-                    brandsRow.classList.remove('visible');
-                    // 收起时重置品牌选择
-                    currentBrand = 'all';
-                    brdBtns.forEach(b => b.classList.remove('active'));
-                    const allBrdBtn = document.querySelector('.filter-btn[data-type="brand"][data-filter="all"]');
-                    if (allBrdBtn) allBrdBtn.classList.add('active');
-                }
-            }
-
             if (descEl) {
                 let descText = '';
-                if (currentCategory === 'all' && currentBrand === 'all') {
-                    descText = '';
-                } else if (currentCategory === 'all' && currentBrand !== 'all') {
-                    descText = brandDescMap[currentBrand] || '';
-                } else if (currentCategory !== 'all' && currentBrand === 'all') {
-                    descText = categoryDescMap[currentCategory] || '';
-                } else {
-                    descText = brandDescMap[currentBrand] || '';
-                }
-                if (descText) {
-                    descEl.textContent = descText;
-                    descEl.style.display = 'block';
-                } else {
-                    descEl.style.display = 'none';
-                }
+                if (currentCategory === 'all' && currentBrand === 'all') descText = '';
+                else if (currentCategory === 'all' && currentBrand !== 'all') descText = brandDescMap[currentBrand] || '';
+                else if (currentCategory !== 'all' && currentBrand === 'all') descText = categoryDescMap[currentCategory] || '';
+                else descText = brandDescMap[currentBrand] || '';
+                descEl.textContent = descText;
+                descEl.style.display = descText ? 'block' : 'none';
             }
 
-            brdBtns.forEach(btn => {
-                const filter = btn.getAttribute('data-filter');
-                if (filter === 'all') { btn.style.display = 'block'; return; }
-                const allowedCats = btn.getAttribute('data-categories').split(',');
-                btn.style.display = (currentCategory === 'all' || allowedCats.includes(currentCategory)) ? 'block' : 'none';
-            });
-
             products.forEach(card => {
-                const catMatch = (currentCategory === 'all' || card.getAttribute('data-category') === currentCategory);
-                const brdMatch = (currentBrand === 'all' || card.getAttribute('data-brand') === currentBrand);
+                const catMatch = currentCategory === 'all' || card.getAttribute('data-category') === currentCategory;
+                const brdMatch = currentBrand === 'all' || card.getAttribute('data-brand') === currentBrand;
                 card.style.display = (catMatch && brdMatch) ? 'block' : 'none';
             });
         }
 
-        [...catBtns, ...brdBtns].forEach(btn => {
-            btn.addEventListener('click', () => {
-                const type = btn.getAttribute('data-type');
-                (type === 'category' ? catBtns : brdBtns).forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                if (type === 'category') currentCategory = btn.getAttribute('data-filter');
-                else currentBrand = btn.getAttribute('data-filter');
-                updateDisplay();
-            });
+        categoryGroup.addEventListener('click', (event) => {
+            const button = event.target.closest('[data-type="category"]');
+            if (!button) return;
+
+            categoryGroup.querySelectorAll('[data-type="category"]').forEach(b => b.classList.remove('active'));
+            button.classList.add('active');
+            currentCategory = button.getAttribute('data-filter');
+            currentBrand = 'all';
+
+            showBrandsForCategory(currentCategory);
+            const allBrandBtn = brandGroup.querySelector('[data-type="brand"][data-filter="all"]');
+            brandGroup.querySelectorAll('[data-type="brand"]').forEach(b => b.classList.remove('active'));
+            if (allBrandBtn) allBrandBtn.classList.add('active');
+
+            updateDisplay();
         });
+
+        brandGroup.addEventListener('click', (event) => {
+            const button = event.target.closest('[data-type="brand"]');
+            if (!button) return;
+
+            brandGroup.querySelectorAll('[data-type="brand"]').forEach(b => b.classList.remove('active'));
+            button.classList.add('active');
+            currentBrand = button.getAttribute('data-filter');
+            updateDisplay();
+        });
+
+        window.addEventListener('scroll', () => {
+            if (!backToTop) return;
+            backToTop.classList.toggle('visible', window.scrollY > 400);
+        });
+
+        if (backToTop) {
+            backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        }
+
+        showBrandsForCategory('all');
+        updateDisplay();
     });
     </script>`;
     finalIndexHtml = finalIndexHtml.replace('</body>', filterScript + '</body>');
@@ -256,7 +268,8 @@ function buildSite() {
 
     rawData.forEach((item, index) => {
         const productPageName = slugMap[index];
-        const buyUrl = `https://kakobuy.com/item/details?url=${encodeURIComponent(item['微店商品链接'])}&affcode=6phfk`;
+        const mulebuyId = item['微店商品 ID'] || item['微店商品ID'] || item['微店商品Id'] || item['微店商品id'] || '';
+        const buyUrl = `https://mulebuy.com/product?id=${encodeURIComponent(mulebuyId)}&platform=WEIDIAN&register?ref=200636595`;
         const formattedItemPrice = Number(item['美元'] || 0).toFixed(2);
         const canonicalUrl = `${SITE_DOMAIN}/${productPageName}`;
         
@@ -351,7 +364,7 @@ function buildSite() {
         const productDetailsRegex = /<div class="product-details">[\s\S]*?<\/div>(\s*<\/div>)?/; 
         finalProductHtml = finalProductHtml.replace(productDetailsRegex, detailSectionHtml);
 
-        finalProductHtml = finalProductHtml.replace(/<button class="buy-now-btn">.*?<\/button>/, `<a href="${buyUrl}" target="_blank" class="buy-now-btn" style="text-decoration:none;display:flex;align-items:center;justify-content:center;">Buy On Kakobuy</a>`);
+        finalProductHtml = finalProductHtml.replace(/<button class="buy-now-btn">.*?<\/button>/, `<a href="${buyUrl}" target="_blank" class="buy-now-btn" style="text-decoration:none;display:flex;align-items:center;justify-content:center;">Buy On Mulebuy</a>`);
 
         // 替换推荐商品
         // 显示同一品类下的所有商品（排除当前商品）
