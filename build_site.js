@@ -99,12 +99,16 @@ function buildSite() {
 
     // 映射品类与品牌的关系
     const brandToCategories = {};
+    const categoryToBrands = {};
     rawData.forEach(item => {
         const brd = item['品牌'];
         const cat = item['品类'];
         if (brd && cat) {
             if (!brandToCategories[brd]) brandToCategories[brd] = new Set();
             brandToCategories[brd].add(cat);
+
+            if (!categoryToBrands[cat]) categoryToBrands[cat] = new Set();
+            categoryToBrands[cat].add(brd);
         }
     });
 
@@ -112,15 +116,15 @@ function buildSite() {
     // 5. 生成首页
     // ==========================================
 
-    let categoryFiltersHtml = `<button class="filter-btn active" data-type="category" data-filter="all">All Categories</button>`;
+    let categoryFiltersHtml = `<button class="filter-btn active" type="button" data-type="category" data-filter="all">All Categories</button>`;
     categories.forEach(cat => {
-        categoryFiltersHtml += `<button class="filter-btn" data-type="category" data-filter="${escapeHtml(cat)}">${escapeHtml(cat)}</button>`;
+        categoryFiltersHtml += `<button class="filter-btn" type="button" data-type="category" data-filter="${escapeHtml(cat)}">${escapeHtml(cat)}</button>`;
     });
 
-    let brandFiltersHtml = `<button class="filter-btn active" data-type="brand" data-filter="all">All Brands</button>`;
+    let brandFiltersHtml = '';
     brands.forEach(brd => {
         const cats = Array.from(brandToCategories[brd] || []).join(',');
-        brandFiltersHtml += `<button class="filter-btn" data-type="brand" data-filter="${escapeHtml(brd)}" data-categories="${escapeHtml(cats)}">${escapeHtml(brd)}</button>`;
+        brandFiltersHtml += `<button class="filter-btn" type="button" data-type="brand" data-filter="${escapeHtml(brd)}" data-categories="${escapeHtml(cats)}">${escapeHtml(brd)}</button>`;
     });
 
     let productCardsHtml = '';
@@ -152,7 +156,7 @@ function buildSite() {
     finalIndexHtml = finalIndexHtml.replace('PLACEHOLDER_META_KEYWORDS', escapeAttr(indexMetaKeywords));
 
     const filterSectionRegex = /<section class="filters-section">[\s\S]*?<\/section>/;
-    const newFilterSection = `<section class="filters-section"><div class="filter-group">${categoryFiltersHtml}</div><div class="filter-group">${brandFiltersHtml}</div></section>`;
+    const newFilterSection = `<section class="filters-section"><div class="filter-group category-group" id="categoryGroup">${categoryFiltersHtml}</div><div class="sub-category-wrap" id="subCategoryWrap" hidden aria-hidden="true"><div class="filter-group sub-category-group" id="subCategoryGroup"></div></div></section>`;
     finalIndexHtml = finalIndexHtml.replace(filterSectionRegex, newFilterSection);
 
     const productGridRegex = /<section class="product-grid">[\s\S]*?<\/section>/;
@@ -171,24 +175,47 @@ function buildSite() {
     const filterScript = `<script>
     const categoryDescMap = ${JSON.stringify(categoryDescMap)};
     const brandDescMap = ${JSON.stringify(brandDescMap)};
+    const categoryToBrands = ${JSON.stringify(Object.fromEntries(Object.entries(categoryToBrands).map(([category, set]) => [category, Array.from(set)])))};
+    const brandToCategories = ${JSON.stringify(Object.fromEntries(Object.entries(brandToCategories).map(([brand, set]) => [brand, Array.from(set)])))};
     document.addEventListener('DOMContentLoaded', function() {
-        const catBtns = document.querySelectorAll('.filter-btn[data-type="category"]');
-        const brdBtns = document.querySelectorAll('.filter-btn[data-type="brand"]');
+        const categoryGroup = document.getElementById('categoryGroup');
+        const subCategoryWrap = document.getElementById('subCategoryWrap');
+        const subCategoryGroup = document.getElementById('subCategoryGroup');
         const products = document.querySelectorAll('.product-card');
         const descEl = document.querySelector('.hero-description');
+        const heroBg = document.querySelector('.hero-bg-text');
+        const heroTitle = document.querySelector('.hero-title');
         let currentCategory = 'all';
         let currentBrand = 'all';
 
+        const renderSubCategories = (category) => {
+            subCategoryGroup.innerHTML = '';
+            const items = categoryToBrands[category] || [];
+            items.forEach((item, index) => {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = 'filter-btn ' + (index === 0 ? 'active' : '');
+                button.setAttribute('data-type', 'brand');
+                button.setAttribute('data-filter', item);
+                button.setAttribute('data-categories', (brandToCategories[item] || []).join(','));
+                button.textContent = item;
+                subCategoryGroup.appendChild(button);
+            });
+            subCategoryWrap.hidden = items.length === 0;
+            subCategoryWrap.setAttribute('aria-hidden', items.length === 0 ? 'true' : 'false');
+            if (items.length > 0) {
+                subCategoryWrap.removeAttribute('hidden');
+            }
+        };
+
         function updateDisplay() {
-            const heroBg = document.querySelector('.hero-bg-text');
-            const heroTitle = document.querySelector('.hero-title');
             heroBg.textContent = currentCategory === 'all' ? '${SITE_NAME}' : currentCategory;
             heroTitle.textContent = currentBrand === 'all' ? (currentCategory === 'all' ? 'Kakobuysheetfind' : currentCategory) : currentBrand;
 
             if (descEl) {
-                let descText = "";
+                let descText = '';
                 if (currentCategory === 'all' && currentBrand === 'all') {
-                    descText = "";
+                    descText = '';
                 } else if (currentCategory === 'all' && currentBrand !== 'all') {
                     descText = brandDescMap[currentBrand] || '';
                 } else if (currentCategory !== 'all' && currentBrand === 'all') {
@@ -196,38 +223,55 @@ function buildSite() {
                 } else {
                     descText = brandDescMap[currentBrand] || '';
                 }
-                
-                if (descText) {
-                    descEl.textContent = descText;
-                    descEl.style.display = 'block';
-                } else {
-                    descEl.style.display = 'none';
-                }
+                descEl.textContent = descText;
+                descEl.style.display = descText ? 'block' : 'none';
             }
 
-            brdBtns.forEach(btn => {
-                const filter = btn.getAttribute('data-filter');
-                if (filter === 'all') { btn.style.display = 'block'; return; }
-                const allowedCats = btn.getAttribute('data-categories').split(',');
-                btn.style.display = (currentCategory === 'all' || allowedCats.includes(currentCategory)) ? 'block' : 'none';
-            });
-
             products.forEach(card => {
-                const catMatch = (currentCategory === 'all' || card.getAttribute('data-category') === currentCategory);
-                const brdMatch = (currentBrand === 'all' || card.getAttribute('data-brand') === currentBrand);
+                const catMatch = currentCategory === 'all' || card.getAttribute('data-category') === currentCategory;
+                const brdMatch = currentBrand === 'all' || card.getAttribute('data-brand') === currentBrand;
                 card.style.display = (catMatch && brdMatch) ? 'block' : 'none';
             });
         }
 
-        [...catBtns, ...brdBtns].forEach(btn => {
-            btn.addEventListener('click', () => {
-                const type = btn.getAttribute('data-type');
-                (type === 'category' ? catBtns : brdBtns).forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                if (type === 'category') currentCategory = btn.getAttribute('data-filter');
-                else currentBrand = btn.getAttribute('data-filter');
+        categoryGroup.addEventListener('click', (event) => {
+            const button = event.target.closest('[data-type="category"]');
+            if (!button) return;
+
+            categoryGroup.querySelectorAll('[data-type="category"]').forEach((item) => item.classList.remove('active'));
+            button.classList.add('active');
+
+            currentCategory = button.getAttribute('data-filter');
+            currentBrand = 'all';
+
+            if (currentCategory === 'all') {
+                subCategoryWrap.hidden = true;
+                subCategoryWrap.setAttribute('aria-hidden', 'true');
+                subCategoryGroup.innerHTML = '';
                 updateDisplay();
-            });
+                return;
+            }
+
+            renderSubCategories(currentCategory);
+            updateDisplay();
+        });
+
+        subCategoryGroup.addEventListener('click', (event) => {
+            const button = event.target.closest('[data-type="brand"]');
+            if (!button) return;
+
+            subCategoryGroup.querySelectorAll('[data-type="brand"]').forEach((item) => item.classList.remove('active'));
+            button.classList.add('active');
+            currentBrand = button.getAttribute('data-filter');
+            updateDisplay();
+        });
+
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.scrollY > 400);
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     });
     </script>`;

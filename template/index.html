@@ -45,14 +45,17 @@
         <div class="container">
             <!-- Filters -->
             <section class="filters-section">
-                <div class="filter-group">
-                    <button class="filter-btn active">All Categories</button>
-                    <button class="filter-btn">Shoes</button>
-                    <button class="filter-btn">Hoodies</button>
-                    <button class="filter-btn">T-Shirts</button>
-                    <button class="filter-btn">Jackets</button>
+                <div class="filter-group category-group" id="categoryGroup">
+                    <button class="filter-btn active" type="button" data-category="all">All Categories</button>
+                    <button class="filter-btn" type="button" data-category="shoes">Shoes</button>
+                    <button class="filter-btn" type="button" data-category="hoodies">Hoodies</button>
+                    <button class="filter-btn" type="button" data-category="tshirts">T-Shirts</button>
+                    <button class="filter-btn" type="button" data-category="jackets">Jackets</button>
                 </div>
-                <div class="filter-group">
+                <div class="sub-category-wrap" id="subCategoryWrap" hidden>
+                    <div class="filter-group sub-category-group" id="subCategoryGroup"></div>
+                </div>
+                <div class="filter-group" id="brandGroup" hidden aria-hidden="true">
                     <button class="filter-btn active">All Brands</button>
                     <button class="filter-btn">New Balance</button>
                     <button class="filter-btn">Balenciaga</button>
@@ -195,6 +198,10 @@
             </section>
         </div>
     </main>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
 
     <!-- Site Info Sections -->
     <section class="site-info-sections">
@@ -345,5 +352,69 @@
             </div>
         </div>
     </footer>
+    <script>
+        const categoryData = {
+            shoes: ['New Balance', 'Nike', 'Asics', 'Salomon'],
+            hoodies: ['New Balance', 'Nike', 'Asics', 'Salomon'],
+            tshirts: ['New Balance', 'Nike', 'Asics', 'Salomon'],
+            jackets: ['New Balance', 'Nike', 'Asics', 'Salomon'],
+        };
+
+        const categoryGroup = document.getElementById('categoryGroup');
+        const subCategoryWrap = document.getElementById('subCategoryWrap');
+        const subCategoryGroup = document.getElementById('subCategoryGroup');
+        const brandGroup = document.getElementById('brandGroup');
+        const backToTop = document.getElementById('backToTop');
+
+        subCategoryWrap.hidden = true;
+        subCategoryWrap.setAttribute('aria-hidden', 'true');
+        brandGroup.hidden = true;
+        brandGroup.setAttribute('aria-hidden', 'true');
+
+        const renderSubCategories = (category) => {
+            subCategoryGroup.innerHTML = '';
+            const items = categoryData[category] || [];
+            items.forEach((item, index) => {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = `filter-btn ${index === 0 ? 'active' : ''}`;
+                button.textContent = item;
+                subCategoryGroup.appendChild(button);
+            });
+            const visible = items.length > 0;
+            subCategoryWrap.hidden = !visible;
+            subCategoryWrap.setAttribute('aria-hidden', String(!visible));
+            brandGroup.hidden = !visible;
+            brandGroup.setAttribute('aria-hidden', String(!visible));
+        };
+
+        categoryGroup.addEventListener('click', (event) => {
+            const button = event.target.closest('[data-category]');
+            if (!button) return;
+
+            categoryGroup.querySelectorAll('.filter-btn').forEach((item) => item.classList.remove('active'));
+            button.classList.add('active');
+
+            const category = button.dataset.category;
+            if (category === 'all') {
+                subCategoryWrap.hidden = true;
+                subCategoryWrap.setAttribute('aria-hidden', 'true');
+                subCategoryGroup.innerHTML = '';
+                brandGroup.hidden = true;
+                brandGroup.setAttribute('aria-hidden', 'true');
+                return;
+            }
+
+            renderSubCategories(category);
+        });
+
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.scrollY > 400);
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>

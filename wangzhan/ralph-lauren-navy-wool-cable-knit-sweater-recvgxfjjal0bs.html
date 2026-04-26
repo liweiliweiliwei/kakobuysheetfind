@@ -160,6 +160,10 @@
         </section>
     </main>
 
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
     <!-- Site Info Sections (Disclaimer Only) -->
     <section class="site-info-sections">
         <div class="info-container">
@@ -279,5 +283,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.scrollY > 400);
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
