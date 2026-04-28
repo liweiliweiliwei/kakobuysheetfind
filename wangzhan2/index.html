@@ -22116,6 +22116,46 @@
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 });
             }
+
+            const categoryGroup = document.getElementById('categoryGroup');
+            const brandGroup = document.getElementById('brandGroup');
+            const categoryButtons = categoryGroup ? Array.from(categoryGroup.querySelectorAll('.filter-btn')) : [];
+            const brandButtons = brandGroup ? Array.from(brandGroup.querySelectorAll('.filter-btn')) : [];
+
+            const setActiveButton = (buttons, activeButton) => {
+                buttons.forEach((button) => button.classList.toggle('active', button === activeButton));
+            };
+
+            const showBrandGroup = () => {
+                if (!brandGroup) return;
+                brandGroup.hidden = false;
+                brandGroup.setAttribute('aria-hidden', 'false');
+                brandGroup.classList.add('visible');
+            };
+
+            const hideBrandGroup = () => {
+                if (!brandGroup) return;
+                brandGroup.classList.remove('visible');
+                brandGroup.setAttribute('aria-hidden', 'true');
+                brandGroup.hidden = true;
+            };
+
+            categoryButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    setActiveButton(categoryButtons, button);
+                    if (button.dataset.category === 'all') {
+                        hideBrandGroup();
+                        setActiveButton(brandButtons, brandButtons[0]);
+                        return;
+                    }
+                    showBrandGroup();
+                    setActiveButton(brandButtons, brandButtons[0]);
+                });
+            });
+
+            brandButtons.forEach((button) => {
+                button.addEventListener('click', () => setActiveButton(brandButtons, button));
+            });
         });
     </script>
 <script>

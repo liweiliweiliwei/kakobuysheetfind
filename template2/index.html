@@ -60,20 +60,20 @@
         <div class="container">
             <!-- Filters -->
             <section class="filters-section">
-                <div class="filter-group">
-                    <button class="filter-btn active">All Categories</button>
-                    <button class="filter-btn">Sneakers</button>
-                    <button class="filter-btn">Hoodies</button>
-                    <button class="filter-btn">Tees</button>
-                    <button class="filter-btn">Outerwear</button>
+                <div class="filter-group category-group" id="categoryGroup">
+                    <button class="filter-btn active" type="button" data-category="all">All Categories</button>
+                    <button class="filter-btn" type="button" data-category="sneakers">Sneakers</button>
+                    <button class="filter-btn" type="button" data-category="hoodies">Hoodies</button>
+                    <button class="filter-btn" type="button" data-category="tees">Tees</button>
+                    <button class="filter-btn" type="button" data-category="outerwear">Outerwear</button>
                 </div>
-                <div class="filter-group">
-                    <button class="filter-btn active">All Brands</button>
-                    <button class="filter-btn">New Balance</button>
-                    <button class="filter-btn">Nike</button>
-                    <button class="filter-btn">Adidas</button>
-                    <button class="filter-btn">Asics</button>
-                    <button class="filter-btn">Salomon</button>
+                <div class="filter-group filter-group-brands" id="brandGroup" hidden aria-hidden="true">
+                    <button class="filter-btn active" type="button" data-brand="all">All Brands</button>
+                    <button class="filter-btn" type="button" data-brand="new-balance">New Balance</button>
+                    <button class="filter-btn" type="button" data-brand="nike">Nike</button>
+                    <button class="filter-btn" type="button" data-brand="adidas">Adidas</button>
+                    <button class="filter-btn" type="button" data-brand="asics">Asics</button>
+                    <button class="filter-btn" type="button" data-brand="salomon">Salomon</button>
                 </div>
             </section>
 
@@ -357,6 +357,46 @@
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 });
             }
+
+            const categoryGroup = document.getElementById('categoryGroup');
+            const brandGroup = document.getElementById('brandGroup');
+            const categoryButtons = categoryGroup ? Array.from(categoryGroup.querySelectorAll('.filter-btn')) : [];
+            const brandButtons = brandGroup ? Array.from(brandGroup.querySelectorAll('.filter-btn')) : [];
+
+            const setActiveButton = (buttons, activeButton) => {
+                buttons.forEach((button) => button.classList.toggle('active', button === activeButton));
+            };
+
+            const showBrandGroup = () => {
+                if (!brandGroup) return;
+                brandGroup.hidden = false;
+                brandGroup.setAttribute('aria-hidden', 'false');
+                brandGroup.classList.add('visible');
+            };
+
+            const hideBrandGroup = () => {
+                if (!brandGroup) return;
+                brandGroup.classList.remove('visible');
+                brandGroup.setAttribute('aria-hidden', 'true');
+                brandGroup.hidden = true;
+            };
+
+            categoryButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    setActiveButton(categoryButtons, button);
+                    if (button.dataset.category === 'all') {
+                        hideBrandGroup();
+                        setActiveButton(brandButtons, brandButtons[0]);
+                        return;
+                    }
+                    showBrandGroup();
+                    setActiveButton(brandButtons, brandButtons[0]);
+                });
+            });
+
+            brandButtons.forEach((button) => {
+                button.addEventListener('click', () => setActiveButton(brandButtons, button));
+            });
         });
     </script>
 </body>
