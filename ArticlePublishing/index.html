@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kakobuysheetfind | 文章发布中心</title>
+  <meta name="description" content="在 Kakobuysheetfind 文章发布中心进行富文本编辑、预览与社交分享。" />
+  <link rel="canonical" href="https://kakobuysheetfind.org/ArticlePublishing/" />
+  <meta property="og:title" content="Kakobuysheetfind | 文章发布中心" />
+  <meta property="og:description" content="富文本编辑文章，预览内容，并一键分享至 X、Reddit、Facebook。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://kakobuysheetfind.org/ArticlePublishing/" />
+  <meta property="og:site_name" content="Kakobuysheetfind" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet" />
+  <script src="https://cdn.quilljs.com/1.3.7/quill.min.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="https://kakobuysheetfind.org/">Kakobuysheetfind</a>
+    <nav class="topnav">
+      <a href="https://kakobuysheetfind.org/">首页</a>
+      <a href="#editor">编辑文章</a>
+      <a href="#preview">预览</a>
+      <a href="#share">分享</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero card">
+      <div class="hero-copy">
+        <p class="eyebrow">Article Publishing</p>
+        <h1>写作、预览、分享，一站完成</h1>
+        <p class="hero-desc">支持富文本编辑、第三方插件扩展、实时预览，并可快速转发到 X、Reddit、Facebook。页面已自带网站首页入口，方便回到 <a href="https://kakobuysheetfind.org/">kakobuysheetfind.org</a>。</p>
+      </div>
+      <div class="hero-stats">
+        <div><strong>3+</strong><span>社交平台</span></div>
+        <div><strong>Rich Text</strong><span>所见即所得</span></div>
+        <div><strong>Plugin Ready</strong><span>可扩展第三方插件</span></div>
+      </div>
+    </section>
+
+    <section class="layout">
+      <article class="card editor-card" id="editor">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Editor</p>
+            <h2>文章编辑器</h2>
+          </div>
+          <div class="toolbar-actions">
+            <button class="ghost-btn" id="loadSampleBtn" type="button">载入示例</button>
+            <button class="primary-btn" id="previewBtn" type="button">刷新预览</button>
+          </div>
+        </div>
+
+        <label class="field">
+          <span>标题</span>
+          <input id="articleTitle" type="text" placeholder="输入文章标题" />
+        </label>
+
+        <label class="field">
+          <span>摘要</span>
+          <textarea id="articleSummary" rows="3" placeholder="用于分享卡片、SEO 描述和摘要展示"></textarea>
+        </label>
+
+        <label class="field">
+          <span>标签</span>
+          <input id="articleTags" type="text" placeholder="例如：新品,测评,教程" />
+        </label>
+
+        <div class="plugin-bar">
+          <button class="chip-btn" type="button" data-plugin="code">代码块</button>
+          <button class="chip-btn" type="button" data-plugin="quote">引用块</button>
+          <button class="chip-btn" type="button" data-plugin="image">图片占位</button>
+          <button class="chip-btn" type="button" data-plugin="divider">分割线</button>
+        </div>
+
+        <div id="editorRoot" class="quill-wrap"></div>
+      </article>
+
+      <aside class="card sidebar-card" id="share">
+        <div class="section-head compact">
+          <div>
+            <p class="eyebrow">Share</p>
+            <h2>分享设置</h2>
+          </div>
+        </div>
+
+        <label class="field">
+          <span>分享链接</span>
+          <input id="shareUrl" type="url" value="https://kakobuysheetfind.org/ArticlePublishing/" />
+        </label>
+
+        <div class="share-grid">
+          <button class="share-btn x" id="shareX" type="button">转发到 X</button>
+          <button class="share-btn reddit" id="shareReddit" type="button">转发到 红迪</button>
+          <button class="share-btn facebook" id="shareFacebook" type="button">转发到 脸书</button>
+        </div>
+
+        <div class="note-box">
+          <h3>第三方插件支持</h3>
+          <p>当前页面预留了插件位，可直接接入图片上传、语法高亮、AI 辅助写作、表格编辑等第三方能力。你只需要在 `app.js` 中注册新按钮即可。</p>
+        </div>
+
+        <div class="note-box homepage-box">
+          <h3>网站首页</h3>
+          <a class="home-link" href="https://kakobuysheetfind.org/">进入 kakobuysheetfind.org 首页</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card preview-card" id="preview">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Preview</p>
+          <h2>预览效果</h2>
+        </div>
+        <div class="preview-meta" id="previewMeta"></div>
+      </div>
+      <div id="previewTitle" class="preview-title"></div>
+      <div id="previewSummary" class="preview-summary"></div>
+      <div id="previewTags" class="preview-tags"></div>
+      <div id="previewBody" class="preview-body"></div>
+    </section>
+  </main>
+</body>
+</html>
