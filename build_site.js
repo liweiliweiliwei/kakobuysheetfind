@@ -127,11 +127,10 @@ function buildSite() {
         brandFiltersHtml += `<button class="filter-btn" type="button" data-type="brand" data-filter="${escapeHtml(brd)}" data-categories="${escapeHtml(cats)}">${escapeHtml(brd)}</button>`;
     });
 
-    let productCardsHtml = '';
-    rawData.forEach((item, index) => {
-        const productPage = slugMap[index];
+    const renderProductCards = (items) => items.map((item) => {
+        const productPage = slugMap[rawData.indexOf(item)];
         const formattedPrice = Number(item['美元'] || 0).toFixed(2);
-        productCardsHtml += `
+        return `
         <a href="/${productPage}" class="product-card" data-category="${escapeHtml(item['品类'])}" data-brand="${escapeHtml(item['品牌'])}">
             <div class="card-image-wrap">
                 <img src="${escapeHtml(item['SKU图片地址'])}" alt="${escapeHtml(item['品牌'])} ${escapeHtml(item['Tittle'])} - Buy on ${SITE_NAME}" loading="lazy">
@@ -145,7 +144,8 @@ function buildSite() {
                 </div>
             </div>
         </a>`;
-    });
+    }).join('');
+    let productCardsHtml = renderProductCards(rawData);
 
     const indexMetaDesc = `Shop ${rawData.length}+ premium designer items from ${brands.slice(0, 8).join(', ')} and more. Best deals on ${categories.slice(0, 6).join(', ')} at ${SITE_NAME}. Verified quality, global shipping.`;
     const indexMetaKeywords = `${SITE_NAME}, kakobuy, kakobuy spreadsheet, kakobuysheetfind, ${categories.join(', ')}, brands, replica, designer fashion`;
@@ -181,12 +181,17 @@ function buildSite() {
         const categoryGroup = document.getElementById('categoryGroup');
         const subCategoryWrap = document.getElementById('subCategoryWrap');
         const subCategoryGroup = document.getElementById('subCategoryGroup');
-        const products = document.querySelectorAll('.product-card');
+        const productGrid = document.querySelector('.product-grid');
+        const paginationSummary = document.getElementById('paginationSummary');
+        const paginationControls = document.getElementById('paginationControls');
         const descEl = document.querySelector('.hero-description');
         const heroBg = document.querySelector('.hero-bg-text');
         const heroTitle = document.querySelector('.hero-title');
+        const products = Array.from(document.querySelectorAll('.product-card'));
+        const pageSize = 48;
         let currentCategory = 'all';
         let currentBrand = 'all';
+        let currentPage = 1;
 
         const renderSubCategories = (category) => {
             subCategoryGroup.innerHTML = '';
@@ -201,14 +206,61 @@ function buildSite() {
                 button.textContent = item;
                 subCategoryGroup.appendChild(button);
             });
-            subCategoryWrap.hidden = items.length === 0;
-            subCategoryWrap.setAttribute('aria-hidden', items.length === 0 ? 'true' : 'false');
-            if (items.length > 0) {
-                subCategoryWrap.removeAttribute('hidden');
-            }
+            const visible = items.length > 0;
+            subCategoryWrap.hidden = !visible;
+            subCategoryWrap.setAttribute('aria-hidden', String(!visible));
         };
 
-        function updateDisplay() {
+        const getFilteredProducts = () => products.filter(card => {
+            const catMatch = currentCategory === 'all' || card.getAttribute('data-category') === currentCategory;
+            const brdMatch = currentBrand === 'all' || card.getAttribute('data-brand') === currentBrand;
+            return catMatch && brdMatch;
+        });
+
+        const renderPagination = (totalItems) => {
+            const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
+            if (currentPage > totalPages) currentPage = totalPages;
+            paginationSummary.textContent = 'Total Page: ' + totalPages + ' Total Elements: ' + totalItems;
+
+            const pages = [];
+            const pushButton = (label, page, disabled = false, active = false) => {
+                pages.push('<button type="button" class="page-btn' + (active ? ' active' : '') + '" data-page="' + page + '"' + (disabled ? ' disabled' : '') + '>' + label + '</button>');
+            };
+
+            pushButton('Previous', Math.max(1, currentPage - 1), currentPage === 1);
+            pushButton('1', 1, false, currentPage === 1);
+            if (totalPages > 1) {
+                const start = Math.max(2, currentPage - 1);
+                const end = Math.min(totalPages - 1, currentPage + 1);
+                if (start > 2) pages.push('<span class="page-ellipsis">...</span>');
+                for (let page = start; page <= end; page++) {
+                    if (page !== 1 && page !== totalPages) pushButton(String(page), page, false, currentPage === page);
+                }
+                if (end < totalPages - 1) pages.push('<span class="page-ellipsis">...</span>');
+                if (totalPages > 1) pushButton(String(totalPages), totalPages, false, currentPage === totalPages);
+            }
+            pushButton('Next', Math.min(totalPages, currentPage + 1), currentPage === totalPages);
+            paginationControls.innerHTML = pages.join('') + '<div class="page-jump"><input id="pageJumpInput" class="page-jump-input" type="number" min="1" max="' + totalPages + '" inputmode="numeric" placeholder="Jump to"><button type="button" class="page-jump-btn" id="pageJumpBtn">Go</button></div>';
+            const pageJumpInput = document.getElementById('pageJumpInput');
+            const pageJumpBtn = document.getElementById('pageJumpBtn');
+            const jumpToPage = () => {
+                const targetPage = Math.min(totalPages, Math.max(1, parseInt(pageJumpInput.value, 10) || 1));
+                currentPage = targetPage;
+                updateDisplay();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+            pageJumpBtn.onclick = jumpToPage;
+            pageJumpInput.onkeydown = (event) => {
+                if (event.key === 'Enter') jumpToPage();
+            };
+        };
+
+        const updateDisplay = () => {
+            const filtered = getFilteredProducts();
+            const totalItems = filtered.length;
+            const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
+            if (currentPage > totalPages) currentPage = totalPages;
+
             heroBg.textContent = currentCategory === 'all' ? '${SITE_NAME}' : currentCategory;
             heroTitle.textContent = currentBrand === 'all' ? (currentCategory === 'all' ? 'Kakobuysheetfind' : currentCategory) : currentBrand;
 
@@ -227,12 +279,11 @@ function buildSite() {
                 descEl.style.display = descText ? 'block' : 'none';
             }
 
-            products.forEach(card => {
-                const catMatch = currentCategory === 'all' || card.getAttribute('data-category') === currentCategory;
-                const brdMatch = currentBrand === 'all' || card.getAttribute('data-brand') === currentBrand;
-                card.style.display = (catMatch && brdMatch) ? 'block' : 'none';
-            });
-        }
+            products.forEach(card => card.style.display = 'none');
+            const start = (currentPage - 1) * pageSize;
+            filtered.slice(start, start + pageSize).forEach(card => { card.style.display = 'flex'; });
+            renderPagination(totalItems);
+        };
 
         categoryGroup.addEventListener('click', (event) => {
             const button = event.target.closest('[data-type="category"]');
@@ -243,6 +294,7 @@ function buildSite() {
 
             currentCategory = button.getAttribute('data-filter');
             currentBrand = 'all';
+            currentPage = 1;
 
             if (currentCategory === 'all') {
                 subCategoryWrap.hidden = true;
@@ -263,7 +315,16 @@ function buildSite() {
             subCategoryGroup.querySelectorAll('[data-type="brand"]').forEach((item) => item.classList.remove('active'));
             button.classList.add('active');
             currentBrand = button.getAttribute('data-filter');
+            currentPage = 1;
             updateDisplay();
+        });
+
+        paginationControls.addEventListener('click', (event) => {
+            const button = event.target.closest('[data-page]');
+            if (!button || button.disabled) return;
+            currentPage = Number(button.getAttribute('data-page')) || 1;
+            updateDisplay();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
         window.addEventListener('scroll', () => {
@@ -273,6 +334,8 @@ function buildSite() {
         backToTop.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        updateDisplay();
     });
     </script>`;
     finalIndexHtml = finalIndexHtml.replace('</body>', filterScript + '</body>');
@@ -383,8 +446,8 @@ function buildSite() {
         finalProductHtml = finalProductHtml.replace(/<button class="buy-now-btn">.*?<\/button>/, `<a href="${buyUrl}" target="_blank" class="buy-now-btn" style="text-decoration:none;display:flex;align-items:center;justify-content:center;">Buy On Kakobuy</a>`);
 
         // 替换推荐商品
-        // 显示同一品类下的所有商品（排除当前商品）
-        const recList = rawData.filter((p, i) => i !== index && p['品类'] === category);
+        // 显示同一品类下的最多 8 个商品（排除当前商品）
+        const recList = rawData.filter((p, i) => i !== index && p['品类'] === category).slice(0, 8);
         let recCardsHtml = '';
         recList.forEach(rec => {
             recCardsHtml += `
