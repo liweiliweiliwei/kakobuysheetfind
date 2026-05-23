@@ -73,7 +73,7 @@ function buildSite() {
     const slugMap = {};
     rawData.forEach((item, index) => {
         const slug = cleanSlug(item['SLUG']);
-        slugMap[index] = slug ? `${slug}.html` : `product_${index}.html`;
+        slugMap[index] = slug ? `${slug}/` : `product_${index}/`;
     });
 
     // 4. 提取分类和品牌及其关系
@@ -423,7 +423,7 @@ function buildSite() {
         // 替换面包屑
         const breadcrumbHtml = `
                 <nav class="breadcrumbs">
-                    <a href="/index.html" class="breadcrumb-item">Home</a>
+                    <a href="/" class="breadcrumb-item">Home</a>
                     <span>/</span>
                     <span class="breadcrumb-item">${escapeHtml(category)}</span>
                     <span>/</span>
@@ -474,7 +474,14 @@ function buildSite() {
         const recommendedSectionRegex = /<section class="recommended-section">[\s\S]*?<\/section>/;
         finalProductHtml = finalProductHtml.replace(recommendedSectionRegex, newRecommendedSectionHtml);
 
-        fs.writeFileSync(path.join(OUTPUT_DIR, productPageName), finalProductHtml);
+        const productPageDir = path.join(OUTPUT_DIR, productPageName);
+        if (fs.existsSync(productPageDir) && !fs.lstatSync(productPageDir).isDirectory()) {
+            fs.unlinkSync(productPageDir);
+        }
+        if (!fs.existsSync(productPageDir)) {
+            fs.mkdirSync(productPageDir, { recursive: true });
+        }
+        fs.writeFileSync(path.join(productPageDir, 'index.html'), finalProductHtml);
     });
 
     // 生成 sitemap & robots
